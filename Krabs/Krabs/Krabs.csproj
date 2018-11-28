@@ -208,6 +208,7 @@
     <None Include="Resources\recycling_recyclebin_empty_delete_trash_1771.png" />
     <None Include="Resources\27-Edit_Text_256x256_35395.png" />
     <None Include="Resources\print_46933.png" />
+    <None Include="Resources\businesspackage_additionalpackage_box_add_insert_negoci_2335.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

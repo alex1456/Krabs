@@ -478,5 +478,15 @@ namespace Krabs
         {
 
         }
+
+        private void tableLayoutPanel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void metroLabel33_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

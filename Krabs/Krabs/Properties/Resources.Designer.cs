@@ -73,6 +73,16 @@ namespace Krabs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap businesspackage_additionalpackage_box_add_insert_negoci_2335 {
+            get {
+                object obj = ResourceManager.GetObject("businesspackage_additionalpackage_box_add_insert_negoci_2335", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Krab_s {
             get {
                 object obj = ResourceManager.GetObject("Krab\'s", resourceCulture);
