@@ -17,13 +17,78 @@ namespace Krabs
     {
         string cid = "";
         int sum = 0;
+        int sum1 = 0;
         public Zacaz()
         {
             InitializeComponent();
             tabel();
             tabel1();
             tabel3();
+            tabel4();
+            combo();
             id();
+            id1();
+        }
+
+        public void combo()
+        {
+            
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM compani", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                // элементы массива [] - это значения столбцов из запроса SELECT
+                metroComboBox1.Items.Add(reader["Name"].ToString());
+
+            }
+            reader.Close();
+            conn.Close();
+
+        }
+
+        public void tabel4()
+        {
+            metroGrid5.Rows.Clear();
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM price_m", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                // элементы массива [] - это значения столбцов из запроса SELECT
+                metroGrid5.Rows.Add(reader["Id"].ToString(), reader["Name"].ToString(), reader["Opis"].ToString(), new Bitmap(Application.StartupPath + @"\images\m\" + reader["Image"].ToString(), false), reader["Coll"].ToString(), reader["Cena"].ToString());
+
+            }
+            reader.Close();
+            conn.Close();
+        }
+        public void id1()
+        {
+            int id = 0;
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM zacaz_p", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                id++;
+
+            }
+            reader.Close();
+            conn.Close();
+            metroTextBox14.Text = Convert.ToString(id + 1);
+
         }
 
         public void id()
@@ -487,6 +552,98 @@ namespace Krabs
         private void metroLabel33_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroButton9_Click(object sender, EventArgs e)
+        {
+            metroGrid5.Rows.Clear();
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM price_m WHERE CONCAT(`Name`, `Opis`, `Coll`,`Cena`) LIKE '%" + metroTextBox23.Text + "%'", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                // элементы массива [] - это значения столбцов из запроса SELECT
+                metroGrid5.Rows.Add(reader["Name"].ToString(), reader["Opis"].ToString(), new Bitmap(Application.StartupPath + @"\images\m\" + reader["Image"].ToString(), false), reader["Coll"].ToString(), reader["Cena"].ToString());
+
+            }
+            reader.Close();
+            conn.Close();
+        }
+
+        private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Baza baza = new Baza();
+                MySqlConnection conn = baza.GetConnection();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM compani WHERE Name='" + metroComboBox1.Text + "'", conn);
+                // объект для чтения ответа сервера
+                conn.Open();
+                MySqlDataReader reader = command.ExecuteReader();
+                // читаем результат
+                while (reader.Read())
+                {
+                    // элементы массива [] - это значения столбцов из запроса SELECT
+                    metroTextBox17.Text = reader["Country"].ToString();
+                    metroTextBox18.Text = reader["Location"].ToString();
+                    metroTextBox19.Text = reader["Poct.ind"].ToString();
+                    metroTextBox20.Text = reader["Phone"].ToString();
+                    metroTextBox21.Text = reader["Fax"].ToString();
+                    metroTextBox22.Text = reader["Email"].ToString();
+                    metroTextBox25.Text = reader["Predstav"].ToString();
+
+                }
+                reader.Close();
+                conn.Close();
+            }
+            catch { }
+
+        }
+
+        private void metroButton10_Click(object sender, EventArgs e)
+        {
+            if (metroTextBox24.Text=="" || metroTextBox24.Text == "0")
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Предупреждение!", "Заполните поле 'Количество'!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string id= metroGrid5.CurrentRow.Cells[0].Value.ToString();
+                string name=metroGrid5.CurrentRow.Cells[1].Value.ToString();
+                string opis = metroGrid5.CurrentRow.Cells[2].Value.ToString();
+                string col= metroGrid5.CurrentRow.Cells[4].Value.ToString();
+                string cena = metroGrid5.CurrentRow.Cells[5].Value.ToString();
+                int col1 = 0;
+                if(Convert.ToInt32(col)> Convert.ToInt32(metroTextBox24.Text))
+                {
+                    col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
+                    Baza baza = new Baza();
+                    baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
+                    tabel4();
+                    metroTextBox24.Clear();
+                    metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, (Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text)));
+                }
+                else if(Convert.ToInt32(col) < Convert.ToInt32(metroTextBox24.Text))
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Ошибка!", "На складе недостаточно товара!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    
+                    col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
+                     Baza baza = new Baza();
+                     baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '"+col1.ToString()+"' WHERE (`Id` = '"+id+"');");
+                     tabel4();
+                    metroTextBox24.Clear();
+                    metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, (Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text)));
+                }
+               
+
+            }
         }
     }
 }

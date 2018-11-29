@@ -109,6 +109,7 @@ C:\Users\lehaf\Desktop\Krab's\Krabs\Krabs\bin\Debug\zh-CHS\Microsoft.ReportViewe
 C:\Users\lehaf\Desktop\Krab's\Krabs\Krabs\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\lehaf\Desktop\Krab's\Krabs\Krabs\obj\Debug\Krabs.report.resources
 C:\Users\lehaf\Desktop\Krab's\Krabs\Krabs\obj\Debug\Krabs.Report_up.resources
+C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\SqlServerTypes\x86\msvcr120.dll
@@ -161,7 +162,6 @@ C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\it\Microsoft.ReportV
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\lehaf\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll

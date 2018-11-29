@@ -38,12 +38,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -70,6 +70,7 @@
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox11 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox12 = new MetroFramework.Controls.MetroTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
@@ -130,14 +131,34 @@
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.распечататьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroGrid5 = new MetroFramework.Controls.MetroGrid();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroButton9 = new MetroFramework.Controls.MetroButton();
+            this.metroTextBox23 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel32 = new MetroFramework.Controls.MetroLabel();
+            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroTextBox24 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel33 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton10 = new MetroFramework.Controls.MetroButton();
+            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.metroGrid4 = new MetroFramework.Controls.MetroGrid();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.metroButton8 = new MetroFramework.Controls.MetroButton();
+            this.metroButton11 = new MetroFramework.Controls.MetroButton();
+            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroButton13 = new MetroFramework.Controls.MetroButton();
+            this.metroButton12 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
@@ -168,32 +189,14 @@
             this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox14 = new MetroFramework.Controls.MetroTextBox();
             this.metroDateTime4 = new MetroFramework.Controls.MetroDateTime();
-            this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroButton8 = new MetroFramework.Controls.MetroButton();
-            this.metroGrid5 = new MetroFramework.Controls.MetroGrid();
+            this.metroLabel34 = new MetroFramework.Controls.MetroLabel();
+            this.metroTextBox25 = new MetroFramework.Controls.MetroTextBox();
+            this.Column32 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column28 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column29 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroLabel32 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox23 = new MetroFramework.Controls.MetroTextBox();
-            this.metroButton9 = new MetroFramework.Controls.MetroButton();
-            this.metroLabel33 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.распечататьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroTextBox24 = new MetroFramework.Controls.MetroTextBox();
-            this.metroButton10 = new MetroFramework.Controls.MetroButton();
-            this.metroButton11 = new MetroFramework.Controls.MetroButton();
-            this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroButton12 = new MetroFramework.Controls.MetroButton();
-            this.metroButton13 = new MetroFramework.Controls.MetroButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -203,6 +206,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.metroTabControl3.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -219,19 +223,18 @@
             this.contextMenuStrip1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
             this.tableLayoutPanel15.SuspendLayout();
+            this.tableLayoutPanel16.SuspendLayout();
+            this.tableLayoutPanel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid5)).BeginInit();
+            this.tableLayoutPanel19.SuspendLayout();
+            this.tableLayoutPanel21.SuspendLayout();
+            this.tableLayoutPanel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid4)).BeginInit();
+            this.tableLayoutPanel20.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel14.SuspendLayout();
             this.tableLayoutPanel13.SuspendLayout();
-            this.tableLayoutPanel16.SuspendLayout();
-            this.tableLayoutPanel17.SuspendLayout();
-            this.tableLayoutPanel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid5)).BeginInit();
-            this.tableLayoutPanel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel21.SuspendLayout();
-            this.tableLayoutPanel20.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -784,6 +787,18 @@
             this.metroTextBox12.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox12.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Location = new System.Drawing.Point(77, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // metroButton4
             // 
             this.metroButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -926,7 +941,7 @@
             // 
             this.metroDateTime3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime3.Location = new System.Drawing.Point(129, 102);
-            this.metroDateTime3.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime3.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime3.Name = "metroDateTime3";
             this.metroDateTime3.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime3.Style = MetroFramework.MetroColorStyle.Green;
@@ -949,7 +964,7 @@
             // 
             this.metroDateTime2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime2.Location = new System.Drawing.Point(129, 67);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime2.Name = "metroDateTime2";
             this.metroDateTime2.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime2.Style = MetroFramework.MetroColorStyle.Green;
@@ -1030,7 +1045,7 @@
             // 
             this.metroDateTime1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime1.Location = new System.Drawing.Point(129, 32);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Green;
@@ -1474,7 +1489,7 @@
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.14464F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.85536F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 267F));
             this.tableLayoutPanel10.Controls.Add(this.metroButton5, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton7, 1, 0);
@@ -1489,9 +1504,9 @@
             // 
             this.metroButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton5.Location = new System.Drawing.Point(402, 3);
+            this.metroButton5.Location = new System.Drawing.Point(401, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(261, 23);
+            this.metroButton5.Size = new System.Drawing.Size(262, 23);
             this.metroButton5.TabIndex = 0;
             this.metroButton5.Text = "Оформить заказ";
             this.metroButton5.UseSelectable = true;
@@ -1515,7 +1530,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton7.Location = new System.Drawing.Point(171, 3);
             this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(225, 23);
+            this.metroButton7.Size = new System.Drawing.Size(224, 23);
             this.metroButton7.TabIndex = 2;
             this.metroButton7.Text = "Редактировать";
             this.metroButton7.UseSelectable = true;
@@ -1672,6 +1687,30 @@
             this.contextMenuStrip1.Size = new System.Drawing.Size(155, 70);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening_1);
             // 
+            // редактироватьToolStripMenuItem
+            // 
+            this.редактироватьToolStripMenuItem.Image = global::Krabs.Properties.Resources._27_Edit_Text_256x256_35395;
+            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.редактироватьToolStripMenuItem.Text = "Редактировать";
+            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            this.удалитьToolStripMenuItem.Image = global::Krabs.Properties.Resources.recycling_recyclebin_empty_delete_trash_1771;
+            this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
+            // 
+            // распечататьToolStripMenuItem
+            // 
+            this.распечататьToolStripMenuItem.Image = global::Krabs.Properties.Resources.print_46933;
+            this.распечататьToolStripMenuItem.Name = "распечататьToolStripMenuItem";
+            this.распечататьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.распечататьToolStripMenuItem.Text = "Распечатать";
+            this.распечататьToolStripMenuItem.Click += new System.EventHandler(this.распечататьToolStripMenuItem_Click);
+            // 
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.tableLayoutPanel15);
@@ -1701,13 +1740,275 @@
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel18, 1, 0);
             this.tableLayoutPanel15.Controls.Add(this.metroButton11, 1, 1);
             this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel20, 0, 1);
-            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 234);
+            this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 238);
             this.tableLayoutPanel15.Name = "tableLayoutPanel15";
             this.tableLayoutPanel15.RowCount = 2;
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.97675F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.02326F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(675, 215);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(675, 211);
             this.tableLayoutPanel15.TabIndex = 5;
+            // 
+            // tableLayoutPanel16
+            // 
+            this.tableLayoutPanel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel16.ColumnCount = 1;
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 97.65396F));
+            this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel17, 0, 0);
+            this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel21, 0, 1);
+            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
+            this.tableLayoutPanel16.RowCount = 2;
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(341, 177);
+            this.tableLayoutPanel16.TabIndex = 1;
+            // 
+            // tableLayoutPanel17
+            // 
+            this.tableLayoutPanel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel17.ColumnCount = 1;
+            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel17.Controls.Add(this.metroGrid5, 0, 1);
+            this.tableLayoutPanel17.Controls.Add(this.tableLayoutPanel19, 0, 0);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
+            this.tableLayoutPanel17.RowCount = 2;
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.61871F));
+            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.38129F));
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(335, 135);
+            this.tableLayoutPanel17.TabIndex = 0;
+            // 
+            // metroGrid5
+            // 
+            this.metroGrid5.AllowUserToResizeRows = false;
+            this.metroGrid5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroGrid5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.metroGrid5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.metroGrid5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.metroGrid5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.metroGrid5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column32,
+            this.Column27,
+            this.Column28,
+            this.Column29,
+            this.Column30,
+            this.Column31});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid5.DefaultCellStyle = dataGridViewCellStyle11;
+            this.metroGrid5.EnableHeadersVisualStyles = false;
+            this.metroGrid5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.metroGrid5.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.metroGrid5.Location = new System.Drawing.Point(3, 38);
+            this.metroGrid5.Name = "metroGrid5";
+            this.metroGrid5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid5.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.metroGrid5.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.metroGrid5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.metroGrid5.Size = new System.Drawing.Size(329, 94);
+            this.metroGrid5.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroGrid5.TabIndex = 0;
+            this.metroGrid5.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel19.ColumnCount = 3;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.50427F));
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.49573F));
+            this.tableLayoutPanel19.Controls.Add(this.metroButton9, 2, 0);
+            this.tableLayoutPanel19.Controls.Add(this.metroTextBox23, 1, 0);
+            this.tableLayoutPanel19.Controls.Add(this.metroLabel32, 0, 0);
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.RowCount = 1;
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(329, 29);
+            this.tableLayoutPanel19.TabIndex = 1;
+            // 
+            // metroButton9
+            // 
+            this.metroButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton9.Location = new System.Drawing.Point(258, 3);
+            this.metroButton9.Name = "metroButton9";
+            this.metroButton9.Size = new System.Drawing.Size(68, 23);
+            this.metroButton9.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton9.TabIndex = 13;
+            this.metroButton9.Text = "Найти";
+            this.metroButton9.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton9.UseSelectable = true;
+            this.metroButton9.Click += new System.EventHandler(this.metroButton9_Click);
+            // 
+            // metroTextBox23
+            // 
+            this.metroTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.metroTextBox23.CustomButton.Image = null;
+            this.metroTextBox23.CustomButton.Location = new System.Drawing.Point(175, 1);
+            this.metroTextBox23.CustomButton.Name = "";
+            this.metroTextBox23.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox23.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox23.CustomButton.TabIndex = 1;
+            this.metroTextBox23.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox23.CustomButton.UseSelectable = true;
+            this.metroTextBox23.CustomButton.Visible = false;
+            this.metroTextBox23.Lines = new string[0];
+            this.metroTextBox23.Location = new System.Drawing.Point(55, 3);
+            this.metroTextBox23.MaxLength = 32767;
+            this.metroTextBox23.Name = "metroTextBox23";
+            this.metroTextBox23.PasswordChar = '\0';
+            this.metroTextBox23.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox23.SelectedText = "";
+            this.metroTextBox23.SelectionLength = 0;
+            this.metroTextBox23.SelectionStart = 0;
+            this.metroTextBox23.ShortcutsEnabled = true;
+            this.metroTextBox23.Size = new System.Drawing.Size(197, 23);
+            this.metroTextBox23.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTextBox23.TabIndex = 12;
+            this.metroTextBox23.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox23.UseSelectable = true;
+            this.metroTextBox23.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox23.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel32
+            // 
+            this.metroLabel32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroLabel32.AutoSize = true;
+            this.metroLabel32.Location = new System.Drawing.Point(3, 5);
+            this.metroLabel32.Name = "metroLabel32";
+            this.metroLabel32.Size = new System.Drawing.Size(46, 19);
+            this.metroLabel32.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel32.TabIndex = 0;
+            this.metroLabel32.Text = "Поиск";
+            this.metroLabel32.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // tableLayoutPanel21
+            // 
+            this.tableLayoutPanel21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel21.ColumnCount = 3;
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel21.Controls.Add(this.metroTextBox24, 1, 0);
+            this.tableLayoutPanel21.Controls.Add(this.metroLabel33, 0, 0);
+            this.tableLayoutPanel21.Controls.Add(this.metroButton10, 2, 0);
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(3, 144);
+            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
+            this.tableLayoutPanel21.RowCount = 1;
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(335, 30);
+            this.tableLayoutPanel21.TabIndex = 1;
+            // 
+            // metroTextBox24
+            // 
+            this.metroTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            // 
+            // 
+            // 
+            this.metroTextBox24.CustomButton.Image = null;
+            this.metroTextBox24.CustomButton.Location = new System.Drawing.Point(151, 1);
+            this.metroTextBox24.CustomButton.Name = "";
+            this.metroTextBox24.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox24.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox24.CustomButton.TabIndex = 1;
+            this.metroTextBox24.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox24.CustomButton.UseSelectable = true;
+            this.metroTextBox24.CustomButton.Visible = false;
+            this.metroTextBox24.Lines = new string[0];
+            this.metroTextBox24.Location = new System.Drawing.Point(88, 3);
+            this.metroTextBox24.MaxLength = 32767;
+            this.metroTextBox24.Name = "metroTextBox24";
+            this.metroTextBox24.PasswordChar = '\0';
+            this.metroTextBox24.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox24.SelectedText = "";
+            this.metroTextBox24.SelectionLength = 0;
+            this.metroTextBox24.SelectionStart = 0;
+            this.metroTextBox24.ShortcutsEnabled = true;
+            this.metroTextBox24.Size = new System.Drawing.Size(173, 23);
+            this.metroTextBox24.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTextBox24.TabIndex = 12;
+            this.metroTextBox24.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox24.UseSelectable = true;
+            this.metroTextBox24.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox24.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel33
+            // 
+            this.metroLabel33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroLabel33.AutoSize = true;
+            this.metroLabel33.Location = new System.Drawing.Point(3, 5);
+            this.metroLabel33.Name = "metroLabel33";
+            this.metroLabel33.Size = new System.Drawing.Size(79, 19);
+            this.metroLabel33.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel33.TabIndex = 0;
+            this.metroLabel33.Text = "Количество";
+            this.metroLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel33.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroLabel33.Click += new System.EventHandler(this.metroLabel33_Click);
+            // 
+            // metroButton10
+            // 
+            this.metroButton10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton10.Location = new System.Drawing.Point(267, 3);
+            this.metroButton10.Name = "metroButton10";
+            this.metroButton10.Size = new System.Drawing.Size(65, 23);
+            this.metroButton10.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton10.TabIndex = 13;
+            this.metroButton10.Text = "Добавить";
+            this.metroButton10.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton10.UseSelectable = true;
+            this.metroButton10.Click += new System.EventHandler(this.metroButton10_Click);
+            // 
+            // tableLayoutPanel18
+            // 
+            this.tableLayoutPanel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel18.ColumnCount = 1;
+            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel18.Controls.Add(this.metroGrid4, 0, 0);
+            this.tableLayoutPanel18.Controls.Add(this.metroButton8, 0, 1);
+            this.tableLayoutPanel18.Location = new System.Drawing.Point(350, 3);
+            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
+            this.tableLayoutPanel18.RowCount = 2;
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.35294F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(322, 177);
+            this.tableLayoutPanel18.TabIndex = 2;
             // 
             // metroGrid4
             // 
@@ -1758,7 +2059,7 @@
             this.metroGrid4.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.metroGrid4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid4.Size = new System.Drawing.Size(316, 143);
+            this.metroGrid4.Size = new System.Drawing.Size(316, 139);
             this.metroGrid4.Style = MetroFramework.MetroColorStyle.Green;
             this.metroGrid4.TabIndex = 0;
             this.metroGrid4.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -1788,6 +2089,68 @@
             this.Column26.HeaderText = "Стоимость";
             this.Column26.Name = "Column26";
             // 
+            // metroButton8
+            // 
+            this.metroButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton8.Location = new System.Drawing.Point(3, 149);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.Size = new System.Drawing.Size(316, 23);
+            this.metroButton8.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton8.TabIndex = 1;
+            this.metroButton8.Text = "Удалить";
+            this.metroButton8.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton8.UseSelectable = true;
+            // 
+            // metroButton11
+            // 
+            this.metroButton11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton11.Location = new System.Drawing.Point(350, 186);
+            this.metroButton11.Name = "metroButton11";
+            this.metroButton11.Size = new System.Drawing.Size(322, 22);
+            this.metroButton11.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton11.TabIndex = 3;
+            this.metroButton11.Text = "Оформить";
+            this.metroButton11.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton11.UseSelectable = true;
+            // 
+            // tableLayoutPanel20
+            // 
+            this.tableLayoutPanel20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel20.ColumnCount = 2;
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.02639F));
+            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.97361F));
+            this.tableLayoutPanel20.Controls.Add(this.metroButton13, 1, 0);
+            this.tableLayoutPanel20.Controls.Add(this.metroButton12, 0, 0);
+            this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 186);
+            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
+            this.tableLayoutPanel20.RowCount = 1;
+            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel20.Size = new System.Drawing.Size(341, 22);
+            this.tableLayoutPanel20.TabIndex = 4;
+            // 
+            // metroButton13
+            // 
+            this.metroButton13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton13.Location = new System.Drawing.Point(176, 3);
+            this.metroButton13.Name = "metroButton13";
+            this.metroButton13.Size = new System.Drawing.Size(162, 16);
+            this.metroButton13.TabIndex = 1;
+            this.metroButton13.Text = "Редактировать";
+            this.metroButton13.UseSelectable = true;
+            this.metroButton13.Visible = false;
+            // 
+            // metroButton12
+            // 
+            this.metroButton12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton12.Location = new System.Drawing.Point(3, 3);
+            this.metroButton12.Name = "metroButton12";
+            this.metroButton12.Size = new System.Drawing.Size(167, 16);
+            this.metroButton12.TabIndex = 0;
+            this.metroButton12.Text = "Очистить";
+            this.metroButton12.UseSelectable = true;
+            // 
             // tableLayoutPanel11
             // 
             this.tableLayoutPanel11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1800,7 +2163,7 @@
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(675, 229);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(675, 238);
             this.tableLayoutPanel11.TabIndex = 4;
             this.tableLayoutPanel11.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel11_Paint);
             // 
@@ -1818,7 +2181,7 @@
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(669, 223);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(669, 232);
             this.tableLayoutPanel12.TabIndex = 0;
             // 
             // tableLayoutPanel14
@@ -1855,7 +2218,7 @@
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel14.Size = new System.Drawing.Size(329, 217);
+            this.tableLayoutPanel14.Size = new System.Drawing.Size(329, 226);
             this.tableLayoutPanel14.TabIndex = 1;
             // 
             // metroLabel26
@@ -1928,6 +2291,7 @@
             this.metroComboBox1.TabIndex = 2;
             this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroComboBox1.UseSelectable = true;
+            this.metroComboBox1.SelectedIndexChanged += new System.EventHandler(this.metroComboBox1_SelectedIndexChanged);
             // 
             // metroLabel27
             // 
@@ -2162,6 +2526,8 @@
             this.tableLayoutPanel13.ColumnCount = 2;
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel13.Controls.Add(this.metroLabel34, 0, 6);
+            this.tableLayoutPanel13.Controls.Add(this.metroTextBox25, 0, 6);
             this.tableLayoutPanel13.Controls.Add(this.metroLabel24, 0, 5);
             this.tableLayoutPanel13.Controls.Add(this.metroTextBox16, 0, 5);
             this.tableLayoutPanel13.Controls.Add(this.metroLabel23, 0, 4);
@@ -2184,7 +2550,7 @@
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(328, 217);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(328, 226);
             this.tableLayoutPanel13.TabIndex = 0;
             // 
             // metroLabel24
@@ -2388,123 +2754,55 @@
             this.metroDateTime4.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime4.TabIndex = 3;
             // 
-            // tableLayoutPanel16
+            // metroLabel34
             // 
-            this.tableLayoutPanel16.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel16.ColumnCount = 2;
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 97.65396F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.346041F));
-            this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel17, 0, 0);
-            this.tableLayoutPanel16.Controls.Add(this.tableLayoutPanel21, 0, 1);
-            this.tableLayoutPanel16.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-            this.tableLayoutPanel16.RowCount = 2;
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(341, 181);
-            this.tableLayoutPanel16.TabIndex = 1;
+            this.metroLabel34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroLabel34.AutoSize = true;
+            this.metroLabel34.Location = new System.Drawing.Point(3, 199);
+            this.metroLabel34.Name = "metroLabel34";
+            this.metroLabel34.Size = new System.Drawing.Size(120, 19);
+            this.metroLabel34.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel34.TabIndex = 12;
+            this.metroLabel34.Text = "Представитель";
+            this.metroLabel34.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // tableLayoutPanel17
+            // metroTextBox25
             // 
-            this.tableLayoutPanel17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel17.ColumnCount = 1;
-            this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel17.Controls.Add(this.metroGrid5, 0, 1);
-            this.tableLayoutPanel17.Controls.Add(this.tableLayoutPanel19, 0, 0);
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel17.Name = "tableLayoutPanel17";
-            this.tableLayoutPanel17.RowCount = 2;
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.61871F));
-            this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.38129F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(327, 139);
-            this.tableLayoutPanel17.TabIndex = 0;
+            this.metroTextBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             // 
-            // tableLayoutPanel18
             // 
-            this.tableLayoutPanel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel18.ColumnCount = 1;
-            this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel18.Controls.Add(this.metroGrid4, 0, 0);
-            this.tableLayoutPanel18.Controls.Add(this.metroButton8, 0, 1);
-            this.tableLayoutPanel18.Location = new System.Drawing.Point(350, 3);
-            this.tableLayoutPanel18.Name = "tableLayoutPanel18";
-            this.tableLayoutPanel18.RowCount = 2;
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.35294F));
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(322, 181);
-            this.tableLayoutPanel18.TabIndex = 2;
             // 
-            // metroButton8
+            this.metroTextBox25.CustomButton.Image = null;
+            this.metroTextBox25.CustomButton.Location = new System.Drawing.Point(174, 1);
+            this.metroTextBox25.CustomButton.Name = "";
+            this.metroTextBox25.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox25.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox25.CustomButton.TabIndex = 1;
+            this.metroTextBox25.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox25.CustomButton.UseSelectable = true;
+            this.metroTextBox25.CustomButton.Visible = false;
+            this.metroTextBox25.Lines = new string[0];
+            this.metroTextBox25.Location = new System.Drawing.Point(129, 197);
+            this.metroTextBox25.MaxLength = 32767;
+            this.metroTextBox25.Name = "metroTextBox25";
+            this.metroTextBox25.PasswordChar = '\0';
+            this.metroTextBox25.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox25.SelectedText = "";
+            this.metroTextBox25.SelectionLength = 0;
+            this.metroTextBox25.SelectionStart = 0;
+            this.metroTextBox25.ShortcutsEnabled = true;
+            this.metroTextBox25.Size = new System.Drawing.Size(196, 23);
+            this.metroTextBox25.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTextBox25.TabIndex = 13;
+            this.metroTextBox25.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox25.UseSelectable = true;
+            this.metroTextBox25.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox25.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.metroButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton8.Location = new System.Drawing.Point(3, 153);
-            this.metroButton8.Name = "metroButton8";
-            this.metroButton8.Size = new System.Drawing.Size(316, 23);
-            this.metroButton8.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroButton8.TabIndex = 1;
-            this.metroButton8.Text = "Удалить";
-            this.metroButton8.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton8.UseSelectable = true;
+            // Column32
             // 
-            // metroGrid5
-            // 
-            this.metroGrid5.AllowUserToResizeRows = false;
-            this.metroGrid5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroGrid5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid5.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.metroGrid5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.metroGrid5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column27,
-            this.Column28,
-            this.Column29,
-            this.Column30,
-            this.Column31});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid5.DefaultCellStyle = dataGridViewCellStyle11;
-            this.metroGrid5.EnableHeadersVisualStyles = false;
-            this.metroGrid5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid5.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid5.Location = new System.Drawing.Point(3, 40);
-            this.metroGrid5.Name = "metroGrid5";
-            this.metroGrid5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid5.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.metroGrid5.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid5.Size = new System.Drawing.Size(321, 96);
-            this.metroGrid5.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroGrid5.TabIndex = 0;
-            this.metroGrid5.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.Column32.HeaderText = "№";
+            this.Column32.Name = "Column32";
             // 
             // Column27
             // 
@@ -2519,6 +2817,7 @@
             // Column29
             // 
             this.Column29.HeaderText = "Постер";
+            this.Column29.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.Column29.Name = "Column29";
             this.Column29.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column29.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
@@ -2532,245 +2831,6 @@
             // 
             this.Column31.HeaderText = "Цена";
             this.Column31.Name = "Column31";
-            // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel19.ColumnCount = 3;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.50427F));
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.49573F));
-            this.tableLayoutPanel19.Controls.Add(this.metroButton9, 2, 0);
-            this.tableLayoutPanel19.Controls.Add(this.metroTextBox23, 1, 0);
-            this.tableLayoutPanel19.Controls.Add(this.metroLabel32, 0, 0);
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 1;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(321, 31);
-            this.tableLayoutPanel19.TabIndex = 1;
-            // 
-            // metroLabel32
-            // 
-            this.metroLabel32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroLabel32.AutoSize = true;
-            this.metroLabel32.Location = new System.Drawing.Point(3, 6);
-            this.metroLabel32.Name = "metroLabel32";
-            this.metroLabel32.Size = new System.Drawing.Size(46, 19);
-            this.metroLabel32.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroLabel32.TabIndex = 0;
-            this.metroLabel32.Text = "Поиск";
-            this.metroLabel32.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // metroTextBox23
-            // 
-            this.metroTextBox23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.metroTextBox23.CustomButton.Image = null;
-            this.metroTextBox23.CustomButton.Location = new System.Drawing.Point(169, 1);
-            this.metroTextBox23.CustomButton.Name = "";
-            this.metroTextBox23.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox23.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox23.CustomButton.TabIndex = 1;
-            this.metroTextBox23.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox23.CustomButton.UseSelectable = true;
-            this.metroTextBox23.CustomButton.Visible = false;
-            this.metroTextBox23.Lines = new string[0];
-            this.metroTextBox23.Location = new System.Drawing.Point(55, 4);
-            this.metroTextBox23.MaxLength = 32767;
-            this.metroTextBox23.Name = "metroTextBox23";
-            this.metroTextBox23.PasswordChar = '\0';
-            this.metroTextBox23.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox23.SelectedText = "";
-            this.metroTextBox23.SelectionLength = 0;
-            this.metroTextBox23.SelectionStart = 0;
-            this.metroTextBox23.ShortcutsEnabled = true;
-            this.metroTextBox23.Size = new System.Drawing.Size(191, 23);
-            this.metroTextBox23.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTextBox23.TabIndex = 12;
-            this.metroTextBox23.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox23.UseSelectable = true;
-            this.metroTextBox23.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox23.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroButton9
-            // 
-            this.metroButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton9.Location = new System.Drawing.Point(252, 4);
-            this.metroButton9.Name = "metroButton9";
-            this.metroButton9.Size = new System.Drawing.Size(66, 23);
-            this.metroButton9.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroButton9.TabIndex = 13;
-            this.metroButton9.Text = "Найти";
-            this.metroButton9.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton9.UseSelectable = true;
-            // 
-            // metroLabel33
-            // 
-            this.metroLabel33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroLabel33.AutoSize = true;
-            this.metroLabel33.Location = new System.Drawing.Point(3, 5);
-            this.metroLabel33.Name = "metroLabel33";
-            this.metroLabel33.Size = new System.Drawing.Size(79, 19);
-            this.metroLabel33.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroLabel33.TabIndex = 0;
-            this.metroLabel33.Text = "Количество";
-            this.metroLabel33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabel33.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroLabel33.Click += new System.EventHandler(this.metroLabel33_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(77, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // редактироватьToolStripMenuItem
-            // 
-            this.редактироватьToolStripMenuItem.Image = global::Krabs.Properties.Resources._27_Edit_Text_256x256_35395;
-            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
-            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.редактироватьToolStripMenuItem.Text = "Редактировать";
-            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
-            // 
-            // удалитьToolStripMenuItem
-            // 
-            this.удалитьToolStripMenuItem.Image = global::Krabs.Properties.Resources.recycling_recyclebin_empty_delete_trash_1771;
-            this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.удалитьToolStripMenuItem.Text = "Удалить";
-            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
-            // 
-            // распечататьToolStripMenuItem
-            // 
-            this.распечататьToolStripMenuItem.Image = global::Krabs.Properties.Resources.print_46933;
-            this.распечататьToolStripMenuItem.Name = "распечататьToolStripMenuItem";
-            this.распечататьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.распечататьToolStripMenuItem.Text = "Распечатать";
-            this.распечататьToolStripMenuItem.Click += new System.EventHandler(this.распечататьToolStripMenuItem_Click);
-            // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel21.ColumnCount = 3;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.tableLayoutPanel21.Controls.Add(this.metroTextBox24, 1, 0);
-            this.tableLayoutPanel21.Controls.Add(this.metroLabel33, 0, 0);
-            this.tableLayoutPanel21.Controls.Add(this.metroButton10, 2, 0);
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(3, 148);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 1;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(327, 30);
-            this.tableLayoutPanel21.TabIndex = 1;
-            // 
-            // metroTextBox24
-            // 
-            this.metroTextBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            // 
-            // 
-            // 
-            this.metroTextBox24.CustomButton.Image = null;
-            this.metroTextBox24.CustomButton.Location = new System.Drawing.Point(143, 1);
-            this.metroTextBox24.CustomButton.Name = "";
-            this.metroTextBox24.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox24.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox24.CustomButton.TabIndex = 1;
-            this.metroTextBox24.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox24.CustomButton.UseSelectable = true;
-            this.metroTextBox24.CustomButton.Visible = false;
-            this.metroTextBox24.Lines = new string[0];
-            this.metroTextBox24.Location = new System.Drawing.Point(88, 3);
-            this.metroTextBox24.MaxLength = 32767;
-            this.metroTextBox24.Name = "metroTextBox24";
-            this.metroTextBox24.PasswordChar = '\0';
-            this.metroTextBox24.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox24.SelectedText = "";
-            this.metroTextBox24.SelectionLength = 0;
-            this.metroTextBox24.SelectionStart = 0;
-            this.metroTextBox24.ShortcutsEnabled = true;
-            this.metroTextBox24.Size = new System.Drawing.Size(165, 23);
-            this.metroTextBox24.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTextBox24.TabIndex = 12;
-            this.metroTextBox24.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox24.UseSelectable = true;
-            this.metroTextBox24.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox24.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroButton10
-            // 
-            this.metroButton10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton10.Location = new System.Drawing.Point(259, 3);
-            this.metroButton10.Name = "metroButton10";
-            this.metroButton10.Size = new System.Drawing.Size(65, 23);
-            this.metroButton10.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroButton10.TabIndex = 13;
-            this.metroButton10.Text = "Добавить";
-            this.metroButton10.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton10.UseSelectable = true;
-            // 
-            // metroButton11
-            // 
-            this.metroButton11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton11.Location = new System.Drawing.Point(350, 190);
-            this.metroButton11.Name = "metroButton11";
-            this.metroButton11.Size = new System.Drawing.Size(322, 22);
-            this.metroButton11.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroButton11.TabIndex = 3;
-            this.metroButton11.Text = "Оформить";
-            this.metroButton11.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton11.UseSelectable = true;
-            // 
-            // tableLayoutPanel20
-            // 
-            this.tableLayoutPanel20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel20.ColumnCount = 2;
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.02639F));
-            this.tableLayoutPanel20.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.97361F));
-            this.tableLayoutPanel20.Controls.Add(this.metroButton13, 1, 0);
-            this.tableLayoutPanel20.Controls.Add(this.metroButton12, 0, 0);
-            this.tableLayoutPanel20.Location = new System.Drawing.Point(3, 190);
-            this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-            this.tableLayoutPanel20.RowCount = 1;
-            this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel20.Size = new System.Drawing.Size(341, 22);
-            this.tableLayoutPanel20.TabIndex = 4;
-            // 
-            // metroButton12
-            // 
-            this.metroButton12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton12.Location = new System.Drawing.Point(3, 3);
-            this.metroButton12.Name = "metroButton12";
-            this.metroButton12.Size = new System.Drawing.Size(168, 16);
-            this.metroButton12.TabIndex = 0;
-            this.metroButton12.Text = "Очистить";
-            this.metroButton12.UseSelectable = true;
-            // 
-            // metroButton13
-            // 
-            this.metroButton13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton13.Location = new System.Drawing.Point(177, 3);
-            this.metroButton13.Name = "metroButton13";
-            this.metroButton13.Size = new System.Drawing.Size(161, 16);
-            this.metroButton13.TabIndex = 1;
-            this.metroButton13.Text = "Редактировать";
-            this.metroButton13.UseSelectable = true;
             // 
             // Zacaz
             // 
@@ -2792,6 +2852,7 @@
             this.metroTabPage4.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.metroTabControl3.ResumeLayout(false);
@@ -2812,23 +2873,22 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.metroTabPage2.ResumeLayout(false);
             this.tableLayoutPanel15.ResumeLayout(false);
+            this.tableLayoutPanel16.ResumeLayout(false);
+            this.tableLayoutPanel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.metroGrid5)).EndInit();
+            this.tableLayoutPanel19.ResumeLayout(false);
+            this.tableLayoutPanel19.PerformLayout();
+            this.tableLayoutPanel21.ResumeLayout(false);
+            this.tableLayoutPanel21.PerformLayout();
+            this.tableLayoutPanel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid4)).EndInit();
+            this.tableLayoutPanel20.ResumeLayout(false);
             this.tableLayoutPanel11.ResumeLayout(false);
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel14.ResumeLayout(false);
             this.tableLayoutPanel14.PerformLayout();
             this.tableLayoutPanel13.ResumeLayout(false);
             this.tableLayoutPanel13.PerformLayout();
-            this.tableLayoutPanel16.ResumeLayout(false);
-            this.tableLayoutPanel17.ResumeLayout(false);
-            this.tableLayoutPanel18.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid5)).EndInit();
-            this.tableLayoutPanel19.ResumeLayout(false);
-            this.tableLayoutPanel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel21.ResumeLayout(false);
-            this.tableLayoutPanel21.PerformLayout();
-            this.tableLayoutPanel20.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2968,11 +3028,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
         private MetroFramework.Controls.MetroButton metroButton8;
         private MetroFramework.Controls.MetroGrid metroGrid5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
-        private System.Windows.Forms.DataGridViewImageColumn Column29;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column30;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column31;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
         private MetroFramework.Controls.MetroButton metroButton9;
         private MetroFramework.Controls.MetroTextBox metroTextBox23;
@@ -2985,5 +3040,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
         private MetroFramework.Controls.MetroButton metroButton13;
         private MetroFramework.Controls.MetroButton metroButton12;
+        private MetroFramework.Controls.MetroLabel metroLabel34;
+        private MetroFramework.Controls.MetroTextBox metroTextBox25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column32;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column27;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column28;
+        private System.Windows.Forms.DataGridViewImageColumn Column29;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column30;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column31;
     }
 }
