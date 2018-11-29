@@ -618,14 +618,15 @@ namespace Krabs
                 string col= metroGrid5.CurrentRow.Cells[4].Value.ToString();
                 string cena = metroGrid5.CurrentRow.Cells[5].Value.ToString();
                 int col1 = 0;
+                
                 if(Convert.ToInt32(col)> Convert.ToInt32(metroTextBox24.Text))
                 {
                     col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
                     Baza baza = new Baza();
                     baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                     tabel4();
-                    metroTextBox24.Clear();
                     metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, (Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text)));
+                    metroTextBox24.Clear();
                 }
                 else if(Convert.ToInt32(col) < Convert.ToInt32(metroTextBox24.Text))
                 {
@@ -638,8 +639,8 @@ namespace Krabs
                      Baza baza = new Baza();
                      baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '"+col1.ToString()+"' WHERE (`Id` = '"+id+"');");
                      tabel4();
-                    metroTextBox24.Clear();
                     metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, (Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text)));
+                    metroTextBox24.Clear();
                 }
                
 
