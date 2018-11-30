@@ -618,15 +618,35 @@ namespace Krabs
                 string col= metroGrid5.CurrentRow.Cells[4].Value.ToString();
                 string cena = metroGrid5.CurrentRow.Cells[5].Value.ToString();
                 int col1 = 0;
-                
+                int itog = 0;
                 if(Convert.ToInt32(col)> Convert.ToInt32(metroTextBox24.Text))
                 {
-                    col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
-                    Baza baza = new Baza();
-                    baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
-                    tabel4();
-                    metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, (Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text)));
-                    metroTextBox24.Clear();
+                    if (metroTextBox15.Text == "0")
+                    {
+                        itog= Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
+                        col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
+                        Baza baza = new Baza();
+                        baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
+                        tabel4();
+                        metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
+                        sum1 += itog;
+                        metroTextBox16.Text = sum1.ToString();
+                        metroTextBox24.Clear();
+                    }
+                    else
+                    {
+                        int x = Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
+
+                        itog = x - (x / Convert.ToInt32(metroTextBox15.Text));
+                        col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
+                        Baza baza = new Baza();
+                        baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
+                        tabel4();
+                        metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
+                        sum1 += itog;
+                        metroTextBox16.Text = sum1.ToString();
+                        metroTextBox24.Clear();
+                    }
                 }
                 else if(Convert.ToInt32(col) < Convert.ToInt32(metroTextBox24.Text))
                 {
@@ -634,17 +654,51 @@ namespace Krabs
                 }
                 else
                 {
-                    
-                    col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
-                     Baza baza = new Baza();
-                     baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '"+col1.ToString()+"' WHERE (`Id` = '"+id+"');");
-                     tabel4();
-                    metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, (Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text)));
-                    metroTextBox24.Clear();
+                    if (metroTextBox15.Text == "0")
+                    {
+                        itog = Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
+                        col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
+                        Baza baza = new Baza();
+                        baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
+                        tabel4();
+                        metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
+                        sum1 += itog;
+                        metroTextBox16.Text = sum1.ToString();
+                        metroTextBox24.Clear();
+                    }
+                    else
+                    {
+                        int x = Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
+
+                        itog = x - (x / Convert.ToInt32(metroTextBox15.Text));
+                        col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
+                        Baza baza = new Baza();
+                        baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
+                        tabel4();
+                        metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
+                        sum1 += itog;
+                        metroTextBox16.Text = sum1.ToString();
+                        metroTextBox24.Clear();
+                    }
                 }
-               
+
+                
+
+
+
 
             }
+        }
+
+        private void metroButton12_Click(object sender, EventArgs e)
+        {
+            sum1 = 0;
+        }
+
+        private void metroButton8_Click(object sender, EventArgs e)
+        {
+            int a = metroGrid4.CurrentRow.Index;
+            metroGrid4.Rows.Remove(metroGrid4.Rows[a]);
         }
     }
 }
