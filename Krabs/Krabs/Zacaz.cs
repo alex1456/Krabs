@@ -16,7 +16,7 @@ namespace Krabs
     public partial class Zacaz : MetroUserControl
     {
         string cid = "";
-        int sum = 0;
+        double sum = 0;
         int sum1 = 0;
         public Zacaz()
         {
@@ -32,7 +32,7 @@ namespace Krabs
 
         public void combo()
         {
-            
+            metroComboBox1.Items.Clear();
             Baza baza = new Baza();
             MySqlConnection conn = baza.GetConnection();
             MySqlCommand command = new MySqlCommand("SELECT * FROM compani", conn);
@@ -211,13 +211,13 @@ namespace Krabs
                 if (metroTextBox2.Text == "0")
                 {
                     listBox1.Items.Add(metroTextBox10.Text);
-                    sum += Convert.ToInt32(metroTextBox12.Text);
+                    sum += Convert.ToDouble(metroTextBox12.Text);
                     metroTextBox3.Text = sum.ToString();
                 }
                 else
                 {
                     listBox1.Items.Add(metroTextBox10.Text);
-                    sum += Convert.ToInt32(metroTextBox12.Text) - (Convert.ToInt32(metroTextBox12.Text) / Convert.ToInt32(metroTextBox2.Text));
+                    sum += Convert.ToDouble(metroTextBox12.Text) - (Convert.ToDouble(metroTextBox12.Text) *(Convert.ToDouble(metroTextBox2.Text)/100));
                     metroTextBox3.Text = sum.ToString();
                 }
 
@@ -278,12 +278,13 @@ namespace Krabs
         private void metroButton6_Click(object sender, EventArgs e)
         {
             id();
-            sum = 0;
+            
             listBox1.Items.Clear();
             clear();
         }
         public void clear()
         {
+            sum = 0;
             id();
             listBox1.Items.Clear();
             metroTextBox2.Text="0";
@@ -393,7 +394,7 @@ namespace Krabs
                 metroDateTime3.Value = Convert.ToDateTime(metroGrid3.CurrentRow.Cells[3].Value);
                 metroTextBox2.Text = metroGrid3.CurrentRow.Cells[4].Value.ToString();
                 metroTextBox3.Text = metroGrid3.CurrentRow.Cells[11].Value.ToString();
-                sum=Convert.ToInt32( metroGrid3.CurrentRow.Cells[11].Value.ToString());
+                sum=Convert.ToDouble( metroGrid3.CurrentRow.Cells[11].Value.ToString());
                 metroTextBox4.Text = metroGrid3.CurrentRow.Cells[5].Value.ToString();
                 metroTextBox5.Text = metroGrid3.CurrentRow.Cells[6].Value.ToString();
                 metroTextBox6.Text = metroGrid3.CurrentRow.Cells[7].Value.ToString();
@@ -522,7 +523,7 @@ namespace Krabs
                 metroDateTime3.Value = Convert.ToDateTime(metroGrid3.CurrentRow.Cells[3].Value);
                 metroTextBox2.Text = metroGrid3.CurrentRow.Cells[4].Value.ToString();
                 metroTextBox3.Text = metroGrid3.CurrentRow.Cells[11].Value.ToString();
-                sum = Convert.ToInt32(metroGrid3.CurrentRow.Cells[11].Value.ToString());
+                sum = Convert.ToDouble(metroGrid3.CurrentRow.Cells[11].Value.ToString());
                 metroTextBox4.Text = metroGrid3.CurrentRow.Cells[5].Value.ToString();
                 metroTextBox5.Text = metroGrid3.CurrentRow.Cells[6].Value.ToString();
                 metroTextBox6.Text = metroGrid3.CurrentRow.Cells[7].Value.ToString();
@@ -618,32 +619,35 @@ namespace Krabs
                 string col= metroGrid5.CurrentRow.Cells[4].Value.ToString();
                 string cena = metroGrid5.CurrentRow.Cells[5].Value.ToString();
                 int col1 = 0;
-                int itog = 0;
+                double itog = 0;
                 if(Convert.ToInt32(col)> Convert.ToInt32(metroTextBox24.Text))
                 {
                     if (metroTextBox15.Text == "0")
                     {
-                        itog= Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
+                        itog= Convert.ToDouble(cena) * Convert.ToDouble(metroTextBox24.Text);
                         col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
                         Baza baza = new Baza();
                         baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                         tabel4();
                         metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
-                        sum1 += itog;
+                        sum1 += Convert.ToInt32(itog);
                         metroTextBox16.Text = sum1.ToString();
                         metroTextBox24.Clear();
                     }
                     else
                     {
-                        int x = Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
-
-                        itog = x - (x / Convert.ToInt32(metroTextBox15.Text));
+                        double x = Convert.ToDouble(cena) * Convert.ToDouble(metroTextBox24.Text);
+                     
+                        double y = Convert.ToDouble(metroTextBox15.Text) / 100;
+                      
+                        itog = x - (x * y);
+                       
                         col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
                         Baza baza = new Baza();
                         baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                         tabel4();
                         metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
-                        sum1 += itog;
+                        sum1 += Convert.ToInt32(itog);
                         metroTextBox16.Text = sum1.ToString();
                         metroTextBox24.Clear();
                     }
@@ -656,27 +660,30 @@ namespace Krabs
                 {
                     if (metroTextBox15.Text == "0")
                     {
-                        itog = Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
+                        itog = Convert.ToDouble(cena) * Convert.ToDouble(metroTextBox24.Text);
                         col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
                         Baza baza = new Baza();
                         baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                         tabel4();
                         metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
-                        sum1 += itog;
+                        sum1 += Convert.ToInt32(itog);
                         metroTextBox16.Text = sum1.ToString();
                         metroTextBox24.Clear();
                     }
                     else
                     {
-                        int x = Convert.ToInt32(cena) * Convert.ToInt32(metroTextBox24.Text);
-
-                        itog = x - (x / Convert.ToInt32(metroTextBox15.Text));
+                        double x = Convert.ToDouble(cena) * Convert.ToDouble(metroTextBox24.Text);
+                        
+                        double y = Convert.ToDouble(metroTextBox15.Text) / 100;
+                        
+                        itog = x - (x * y);
+                        
                         col1 = Convert.ToInt32(col) - Convert.ToInt32(metroTextBox24.Text);
                         Baza baza = new Baza();
                         baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                         tabel4();
                         metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
-                        sum1 += itog;
+                        sum1 += Convert.ToInt32(itog);
                         metroTextBox16.Text = sum1.ToString();
                         metroTextBox24.Clear();
                     }
@@ -692,13 +699,37 @@ namespace Krabs
 
         private void metroButton12_Click(object sender, EventArgs e)
         {
+            
+            clearcom();
+        }
+
+        public void clearcom()
+        {
             sum1 = 0;
+            id1();
+            metroDateTime4.Value = DateTime.Now;
+            metroDateTime5.Value = DateTime.Now;
+            metroDateTime6.Value = DateTime.Now;
+            metroTextBox15.Text = "0";
+            metroTextBox16.Clear();
+            metroTextBox25.Clear();
+            combo();
+            metroTextBox17.Clear();
+            metroTextBox18.Clear();
+            metroTextBox19.Clear();
+            metroTextBox20.Clear();
+            metroTextBox21.Clear();
+            metroTextBox22.Clear();
+            metroGrid4.Rows.Clear();
+
         }
 
         private void metroButton8_Click(object sender, EventArgs e)
         {
+            sum1-= Convert.ToInt32(metroGrid4.CurrentRow.Cells[4].Value.ToString());
             int a = metroGrid4.CurrentRow.Index;
             metroGrid4.Rows.Remove(metroGrid4.Rows[a]);
+            metroTextBox16.Text = sum1.ToString();
         }
     }
 }
