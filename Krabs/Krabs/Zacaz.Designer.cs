@@ -260,11 +260,14 @@
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.ImageKey = "(отсутствует)";
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(678, 450);
+            this.metroTabPage1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Физические лица";
+            this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
@@ -1489,7 +1492,7 @@
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.14464F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.85536F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 269F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
             this.tableLayoutPanel10.Controls.Add(this.metroButton5, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton7, 1, 0);
@@ -1504,9 +1507,9 @@
             // 
             this.metroButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton5.Location = new System.Drawing.Point(399, 3);
+            this.metroButton5.Location = new System.Drawing.Point(398, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(264, 23);
+            this.metroButton5.Size = new System.Drawing.Size(265, 23);
             this.metroButton5.TabIndex = 0;
             this.metroButton5.Text = "Оформить заказ";
             this.metroButton5.UseSelectable = true;
@@ -1518,7 +1521,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton6.Location = new System.Drawing.Point(3, 3);
             this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(161, 23);
+            this.metroButton6.Size = new System.Drawing.Size(160, 23);
             this.metroButton6.TabIndex = 1;
             this.metroButton6.Text = "Очистить";
             this.metroButton6.UseSelectable = true;
@@ -1528,7 +1531,7 @@
             // 
             this.metroButton7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton7.Location = new System.Drawing.Point(170, 3);
+            this.metroButton7.Location = new System.Drawing.Point(169, 3);
             this.metroButton7.Name = "metroButton7";
             this.metroButton7.Size = new System.Drawing.Size(223, 23);
             this.metroButton7.TabIndex = 2;
@@ -1547,8 +1550,10 @@
             this.metroTabPage7.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage7.Name = "metroTabPage7";
             this.metroTabPage7.Size = new System.Drawing.Size(678, 450);
+            this.metroTabPage7.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabPage7.TabIndex = 2;
             this.metroTabPage7.Text = "Таблица заказов клиентов";
+            this.metroTabPage7.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabPage7.VerticalScrollbarBarColor = true;
             this.metroTabPage7.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage7.VerticalScrollbarSize = 10;
@@ -1713,6 +1718,7 @@
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.metroTabPage2.Controls.Add(this.tableLayoutPanel15);
             this.metroTabPage2.Controls.Add(this.tableLayoutPanel11);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
@@ -1721,8 +1727,10 @@
             this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(678, 450);
+            this.metroTabPage2.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Компании";
+            this.metroTabPage2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;

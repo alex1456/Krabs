@@ -31,10 +31,10 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
-            this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
             this.tableLayoutPanel1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
@@ -95,52 +95,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(187, 492);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTile1.Location = new System.Drawing.Point(3, 3);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(181, 59);
-            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile1.TabIndex = 0;
-            this.metroTile1.Text = "Клиенты";
-            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTile2.Location = new System.Drawing.Point(3, 68);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(181, 61);
-            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile2.TabIndex = 1;
-            this.metroTile2.Text = "Прайс";
-            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile2.UseSelectable = true;
-            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTile3.Location = new System.Drawing.Point(3, 135);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(181, 58);
-            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroTile3.TabIndex = 2;
-            this.metroTile3.Text = "Заказы";
-            this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile3.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile3.UseSelectable = true;
-            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
-            // 
             // metroPanel2
             // 
             this.metroPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -157,11 +111,65 @@
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
             // 
+            // metroTile1
+            // 
+            this.metroTile1.ActiveControl = null;
+            this.metroTile1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTile1.Location = new System.Drawing.Point(3, 3);
+            this.metroTile1.Name = "metroTile1";
+            this.metroTile1.Size = new System.Drawing.Size(181, 59);
+            this.metroTile1.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile1.TabIndex = 0;
+            this.metroTile1.Text = "Клиенты";
+            this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile1.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile1.TileImage = global::Krabs.Properties.Resources.live_contacts_15412;
+            this.metroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile1.UseSelectable = true;
+            this.metroTile1.UseTileImage = true;
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTile2.Location = new System.Drawing.Point(3, 68);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(181, 61);
+            this.metroTile2.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile2.TabIndex = 1;
+            this.metroTile2.Text = "Прайс";
+            this.metroTile2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile2.TileImage = global::Krabs.Properties.Resources.price_scan_scanner_bar_barcode_code_108573;
+            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.UseTileImage = true;
+            this.metroTile2.Click += new System.EventHandler(this.metroTile2_Click);
+            // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTile3.Location = new System.Drawing.Point(3, 135);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(181, 72);
+            this.metroTile3.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile3.TabIndex = 2;
+            this.metroTile3.Text = "Заказы";
+            this.metroTile3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile3.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile3.TileImage = global::Krabs.Properties.Resources.list_notes_930;
+            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.UseTileImage = true;
+            this.metroTile3.Click += new System.EventHandler(this.metroTile3_Click);
+            // 
             // metroTile4
             // 
             this.metroTile4.ActiveControl = null;
             this.metroTile4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroTile4.Location = new System.Drawing.Point(3, 199);
+            this.metroTile4.Location = new System.Drawing.Point(3, 213);
             this.metroTile4.Name = "metroTile4";
             this.metroTile4.Size = new System.Drawing.Size(181, 63);
             this.metroTile4.Style = MetroFramework.MetroColorStyle.Green;
@@ -169,7 +177,10 @@
             this.metroTile4.Text = "Отчёты";
             this.metroTile4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile4.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile4.TileImage = global::Krabs.Properties.Resources.report256_24829;
+            this.metroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.metroTile4.UseSelectable = true;
+            this.metroTile4.UseTileImage = true;
             this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
             // 
             // Menu

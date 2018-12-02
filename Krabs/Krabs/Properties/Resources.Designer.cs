@@ -73,9 +73,39 @@ namespace Krabs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap book_1426 {
+            get {
+                object obj = ResourceManager.GetObject("book_1426", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap businesspackage_additionalpackage_box_add_insert_negoci_2335 {
             get {
                 object obj = ResourceManager.GetObject("businesspackage_additionalpackage_box_add_insert_negoci_2335", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap contacts_address_book_22972 {
+            get {
+                object obj = ResourceManager.GetObject("contacts_address_book_22972", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap folder_image_people_16877 {
+            get {
+                object obj = ResourceManager.GetObject("folder_image_people_16877", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,6 +133,26 @@ namespace Krabs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap list_notes_930 {
+            get {
+                object obj = ResourceManager.GetObject("list_notes_930", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap live_contacts_15412 {
+            get {
+                object obj = ResourceManager.GetObject("live_contacts_15412", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap next_card_user_16710 {
             get {
                 object obj = ResourceManager.GetObject("next_card_user_16710", resourceCulture);
@@ -123,6 +173,16 @@ namespace Krabs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap price_scan_scanner_bar_barcode_code_108573 {
+            get {
+                object obj = ResourceManager.GetObject("price-scan-scanner-bar-barcode-code_108573", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap print_46933 {
             get {
                 object obj = ResourceManager.GetObject("print_46933", resourceCulture);
@@ -136,6 +196,16 @@ namespace Krabs.Properties {
         internal static System.Drawing.Bitmap recycling_recyclebin_empty_delete_trash_1771 {
             get {
                 object obj = ResourceManager.GetObject("recycling_recyclebin_empty_delete_trash_1771", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap report256_24829 {
+            get {
+                object obj = ResourceManager.GetObject("report256_24829", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
