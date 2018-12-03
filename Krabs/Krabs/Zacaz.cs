@@ -30,6 +30,27 @@ namespace Krabs
             id1();
         }
 
+        public int idt()
+        {
+            int id = 0;
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM tovar", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                id++;
+
+            }
+            reader.Close();
+            conn.Close();
+            return id;
+
+        }
+
         public void combo()
         {
             metroComboBox1.Items.Clear();
@@ -730,6 +751,46 @@ namespace Krabs
             int a = metroGrid4.CurrentRow.Index;
             metroGrid4.Rows.Remove(metroGrid4.Rows[a]);
             metroTextBox16.Text = sum1.ToString();
+        }
+
+        private void metroButton11_Click(object sender, EventArgs e)
+        {
+            if (metroTextBox14.Text == "" || metroTextBox15.Text == "" || metroTextBox16.Text == "" || metroTextBox17.Text == "" || metroTextBox18.Text == "" ||
+             metroTextBox19.Text == "" || metroTextBox20.Text == "" || metroTextBox21.Text == "" || metroTextBox22.Text == "" || metroTextBox25.Text == ""
+             || metroComboBox1.Text == "")
+
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Предупреждение!", "Не все поля заполнены!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                
+                Baza baza = new Baza();
+                for(int i = 0; i < metroGrid4.RowCount; i++)
+                {
+                    try
+                    {
+                        if (metroGrid4.Rows[i].Cells[2].Value.ToString()=="")
+                        {
+
+                        }
+                        else
+                        {
+                            baza.SQLExute("INSERT INTO `krabs`.`tovar` (`Id`, `Compani`, `Data`, `Name`, `col`, `Cena`, `Summa`) VALUES ('" + (idt()+1) + "', '" + metroComboBox1.Text + "','" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroGrid4.Rows[i].Cells[1].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[2].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[3].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[4].Value.ToString() + "');");
+                        }
+                        
+                    }catch(Exception ex) { }
+                    
+
+                }
+
+                //baza.SQLExute("INSERT INTO `krabs`.`zacaz_p` (`Id`, `Data_oform`, `Data_sdachi`, `Data_oplaty`, `Scidca`,`Summa`, `Compani`, `Country`, `Addres`,`Pocht`, `phone`,`Fax`, `Email`,`Tovar`,`Predstav`) VALUES ('" + metroTextBox14.Text + "', '" + metroDateTime4.Value.ToString("yyyy-MM-dd") + "', '" + metroDateTime5.Value.ToString("yyyy-MM-dd") + "', '" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroTextBox15.Text + "', '" + metroTextBox16.Text + "', '" + metroComboBox1.Text + "', '" + metroTextBox17.Text + "', '" + metroTextBox18.Text + "', '" + metroTextBox19.Text + "',  '" + metroTextBox20.Text + "', '" + metroTextBox21.Text + "', '" + metroTextBox22.Text + "', '" + metroTextBox25.Text + "');");
+                //tabel3();
+                //Report_up report = new Report_up(metroTextBox1.Text, metroDateTime1.Value.ToString("dd/MM/yyyy"), metroDateTime2.Value.ToString("dd/MM/yyyy"), metroDateTime3.Value.ToString("dd/MM/yyyy"), metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, metroTextBox6.Text, metroTextBox7.Text, metroTextBox8.Text, list, metroTextBox2.Text);
+                //report.ShowDialog();
+
+                clearcom();
+            }
         }
     }
 }

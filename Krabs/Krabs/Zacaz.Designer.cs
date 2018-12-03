@@ -247,7 +247,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(686, 492);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 0;
@@ -1492,7 +1492,7 @@
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.14464F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.85536F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271F));
             this.tableLayoutPanel10.Controls.Add(this.metroButton5, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton7, 1, 0);
@@ -1507,9 +1507,9 @@
             // 
             this.metroButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton5.Location = new System.Drawing.Point(398, 3);
+            this.metroButton5.Location = new System.Drawing.Point(397, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(265, 23);
+            this.metroButton5.Size = new System.Drawing.Size(266, 23);
             this.metroButton5.TabIndex = 0;
             this.metroButton5.Text = "Оформить заказ";
             this.metroButton5.UseSelectable = true;
@@ -1533,7 +1533,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton7.Location = new System.Drawing.Point(169, 3);
             this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(223, 23);
+            this.metroButton7.Size = new System.Drawing.Size(222, 23);
             this.metroButton7.TabIndex = 2;
             this.metroButton7.Text = "Редактировать";
             this.metroButton7.UseSelectable = true;
@@ -2154,6 +2154,7 @@
             this.metroButton11.Text = "Оформить";
             this.metroButton11.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton11.UseSelectable = true;
+            this.metroButton11.Click += new System.EventHandler(this.metroButton11_Click);
             // 
             // tableLayoutPanel20
             // 
