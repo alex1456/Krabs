@@ -25,9 +25,29 @@ namespace Krabs
             tabel1();
             tabel3();
             tabel4();
+            tabel5();
             combo();
             id();
             id1();
+        }
+        public void tabel5()
+        {
+            metroGrid6.Rows.Clear();
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM zacaz_p", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                // элементы массива [] - это значения столбцов из запроса SELECT
+                metroGrid6.Rows.Add(reader["Id"].ToString(), reader["Data_oform"].ToString(), reader["Data_sdachi"].ToString(), reader["Data_oplaty"].ToString(),  reader["Scidca"].ToString(), reader["Summa"].ToString(), reader["Compani"].ToString(), reader["Country"].ToString(), reader["Addres"].ToString(), reader["Pocht"].ToString(), reader["phone"].ToString(), reader["Fax"].ToString(), reader["Email"].ToString(), reader["Predstav"].ToString());
+
+            }
+            reader.Close();
+            conn.Close();
         }
 
         public int idt()
@@ -791,6 +811,76 @@ namespace Krabs
 
                 clearcom();
             }
+        }
+
+        private void metroTextBox26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel22_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void metroGrid6_MouseClick(object sender, MouseEventArgs e)
+        {
+            try
+            {
+                metroGrid7.Rows.Clear();
+                Baza baza = new Baza();
+                string comp = metroGrid6.CurrentRow.Cells[6].Value.ToString();
+                DateTime dt1 = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value);
+
+                //MessageBox.Show(comp + " " + data);
+                MySqlConnection conn = baza.GetConnection();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM tovar WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "'", conn);
+                // объект для чтения ответа сервера
+                conn.Open();
+                MySqlDataReader reader = command.ExecuteReader();
+                // читаем результат
+                while (reader.Read())
+                {
+                    // элементы массива [] - это значения столбцов из запроса SELECT
+                    metroGrid7.Rows.Add(reader["Id"].ToString(), reader["Compani"].ToString(), reader["Data"].ToString(), reader["Name"].ToString(), reader["col"].ToString(), reader["Cena"].ToString(), reader["Summa"].ToString());
+
+                }
+                reader.Close();
+                conn.Close();
+            }catch(Exception ex) { }
+        }
+
+        private void metroButton14_Click(object sender, EventArgs e)
+        {
+            if (metroTextBox26.Text == "")
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Предупреждение!", "Заполните поля для поиска!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                metroGrid7.Rows.Clear();
+                Baza baza = new Baza();
+                // string comp = metroGrid6.CurrentRow.Cells[6].Value.ToString();
+                // DateTime dt1 = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value);
+
+                //MessageBox.Show(comp + " " + data);
+                MySqlConnection conn = baza.GetConnection();
+                MySqlCommand command = new MySqlCommand("SELECT * FROM tovar WHERE Compani='" + metroTextBox26.Text + "' AND Data='" + metroDateTime7.Value.ToString("yyyy-MM-dd") + "'", conn);
+                // объект для чтения ответа сервера
+                conn.Open();
+                MySqlDataReader reader = command.ExecuteReader();
+                // читаем результат
+                while (reader.Read())
+                {
+                    // элементы массива [] - это значения столбцов из запроса SELECT
+                    metroGrid7.Rows.Add(reader["Id"].ToString(), reader["Compani"].ToString(), reader["Data"].ToString(), reader["Name"].ToString(), reader["col"].ToString(), reader["Cena"].ToString(), reader["Summa"].ToString());
+
+                }
+                reader.Close();
+                conn.Close();
+            }
+           
         }
     }
 }
