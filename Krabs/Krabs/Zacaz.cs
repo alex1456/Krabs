@@ -18,6 +18,7 @@ namespace Krabs
         string cid = "";
         double sum = 0;
         int sum1 = 0;
+        int h = 0;
         public Zacaz()
         {
             InitializeComponent();
@@ -26,9 +27,41 @@ namespace Krabs
             tabel3();
             tabel4();
             tabel5();
+           
             combo();
             id();
             id1();
+        }
+
+        public void tabel6()
+        {
+           
+                try
+                {
+                    metroGrid7.Rows.Clear();
+                    Baza baza = new Baza();
+                    string comp = metroGrid6.CurrentRow.Cells[6].Value.ToString();
+                    DateTime dt1 = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value);
+
+                    //MessageBox.Show(comp + " " + data);
+                    MySqlConnection conn = baza.GetConnection();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM tovar WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "'", conn);
+                    // объект для чтения ответа сервера
+                    conn.Open();
+                    MySqlDataReader reader = command.ExecuteReader();
+                    // читаем результат
+                    while (reader.Read())
+                    {
+                        // элементы массива [] - это значения столбцов из запроса SELECT
+                        metroGrid7.Rows.Add(reader["Id"].ToString(), reader["Compani"].ToString(), reader["Data"].ToString(), reader["Name"].ToString(), reader["col"].ToString(), reader["Cena"].ToString(), reader["Summa"].ToString());
+
+                    }
+                    reader.Close();
+                    conn.Close();
+                }
+                catch (Exception ex) { }
+            
+
         }
         public void tabel5()
         {
@@ -670,7 +703,7 @@ namespace Krabs
                         Baza baza = new Baza();
                         baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                         tabel4();
-                        metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
+                        metroGrid4.Rows.Add( name, metroTextBox24.Text, cena, itog);
                         sum1 += Convert.ToInt32(itog);
                         metroTextBox16.Text = sum1.ToString();
                         metroTextBox24.Clear();
@@ -687,7 +720,7 @@ namespace Krabs
                         Baza baza = new Baza();
                         baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                         tabel4();
-                        metroGrid4.Rows.Add(name, opis, metroTextBox24.Text, cena, itog);
+                        metroGrid4.Rows.Add(name, metroTextBox24.Text, cena, itog);
                         sum1 += Convert.ToInt32(itog);
                         metroTextBox16.Text = sum1.ToString();
                         metroTextBox24.Clear();
@@ -767,7 +800,7 @@ namespace Krabs
 
         private void metroButton8_Click(object sender, EventArgs e)
         {
-            sum1-= Convert.ToInt32(metroGrid4.CurrentRow.Cells[4].Value.ToString());
+            sum1-= Convert.ToInt32(metroGrid4.CurrentRow.Cells[3].Value.ToString());
             int a = metroGrid4.CurrentRow.Index;
             metroGrid4.Rows.Remove(metroGrid4.Rows[a]);
             metroTextBox16.Text = sum1.ToString();
@@ -825,29 +858,7 @@ namespace Krabs
 
         private void metroGrid6_MouseClick(object sender, MouseEventArgs e)
         {
-            try
-            {
-                metroGrid7.Rows.Clear();
-                Baza baza = new Baza();
-                string comp = metroGrid6.CurrentRow.Cells[6].Value.ToString();
-                DateTime dt1 = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value);
 
-                //MessageBox.Show(comp + " " + data);
-                MySqlConnection conn = baza.GetConnection();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM tovar WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "'", conn);
-                // объект для чтения ответа сервера
-                conn.Open();
-                MySqlDataReader reader = command.ExecuteReader();
-                // читаем результат
-                while (reader.Read())
-                {
-                    // элементы массива [] - это значения столбцов из запроса SELECT
-                    metroGrid7.Rows.Add(reader["Id"].ToString(), reader["Compani"].ToString(), reader["Data"].ToString(), reader["Name"].ToString(), reader["col"].ToString(), reader["Cena"].ToString(), reader["Summa"].ToString());
-
-                }
-                reader.Close();
-                conn.Close();
-            }catch(Exception ex) { }
         }
 
         private void metroButton14_Click(object sender, EventArgs e)
@@ -881,6 +892,48 @@ namespace Krabs
                 conn.Close();
             }
            
+        }
+
+        private void редактироватьToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (metroGrid7.RowCount-1 == 0)
+            {
+                MetroFramework.MetroMessageBox.Show(this, "Внимание", "Выберите запись в таблице!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            else
+            {
+                sum1 = Convert.ToInt32(metroGrid6.CurrentRow.Cells[5].Value.ToString());
+                metroTextBox14.Text = metroGrid6.CurrentRow.Cells[0].Value.ToString();
+                metroDateTime4.Value = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value.ToString());
+                metroDateTime5.Value = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[2].Value.ToString());
+                metroDateTime6.Value = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[3].Value.ToString());
+                metroTextBox15.Text = metroGrid6.CurrentRow.Cells[4].Value.ToString();
+                metroTextBox16.Text = metroGrid6.CurrentRow.Cells[5].Value.ToString();
+                metroComboBox1.Text = metroGrid6.CurrentRow.Cells[6].Value.ToString();
+                metroTextBox17.Text = metroGrid6.CurrentRow.Cells[7].Value.ToString();
+                metroTextBox18.Text = metroGrid6.CurrentRow.Cells[8].Value.ToString();
+                metroTextBox19.Text = metroGrid6.CurrentRow.Cells[9].Value.ToString();
+                metroTextBox20.Text = metroGrid6.CurrentRow.Cells[10].Value.ToString();
+                metroTextBox21.Text = metroGrid6.CurrentRow.Cells[10].Value.ToString();
+                metroTextBox22.Text = metroGrid6.CurrentRow.Cells[11].Value.ToString();
+                metroTextBox25.Text = metroGrid6.CurrentRow.Cells[12].Value.ToString();
+                metroGrid4.Rows.Clear();
+                try
+                {
+                    for (int i = 0; i < metroGrid7.RowCount; i++)
+                    {
+                        metroGrid4.Rows.Add(metroGrid7.Rows[i].Cells[3].Value.ToString(), metroGrid7.Rows[i].Cells[4].Value.ToString(), metroGrid7.Rows[i].Cells[5].Value.ToString(), metroGrid7.Rows[i].Cells[6].Value.ToString());
+                    }
+                }
+                catch (Exception ex) { }
+                metroTabControl1.SelectedIndex = 2;
+            }
+        }
+
+        private void metroGrid6_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            tabel6();
         }
     }
 }
