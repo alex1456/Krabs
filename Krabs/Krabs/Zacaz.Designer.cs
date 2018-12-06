@@ -160,8 +160,12 @@
             this.metroLabel33 = new MetroFramework.Controls.MetroLabel();
             this.metroButton10 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-            this.metroGrid4 = new MetroFramework.Controls.MetroGrid();
             this.metroButton8 = new MetroFramework.Controls.MetroButton();
+            this.metroGrid4 = new MetroFramework.Controls.MetroGrid();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroButton11 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
             this.metroButton13 = new MetroFramework.Controls.MetroButton();
@@ -235,10 +239,6 @@
             this.удалитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.печатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.найтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -297,7 +297,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage8);
             this.metroTabControl1.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 3;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(686, 492);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 0;
@@ -1542,7 +1542,7 @@
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.14464F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.85536F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 274F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
             this.tableLayoutPanel10.Controls.Add(this.metroButton5, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton7, 1, 0);
@@ -1557,9 +1557,9 @@
             // 
             this.metroButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton5.Location = new System.Drawing.Point(394, 3);
+            this.metroButton5.Location = new System.Drawing.Point(393, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(269, 23);
+            this.metroButton5.Size = new System.Drawing.Size(270, 23);
             this.metroButton5.TabIndex = 0;
             this.metroButton5.Text = "Оформить заказ";
             this.metroButton5.UseSelectable = true;
@@ -1571,7 +1571,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton6.Location = new System.Drawing.Point(3, 3);
             this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(159, 23);
+            this.metroButton6.Size = new System.Drawing.Size(158, 23);
             this.metroButton6.TabIndex = 1;
             this.metroButton6.Text = "Очистить";
             this.metroButton6.UseSelectable = true;
@@ -1581,7 +1581,7 @@
             // 
             this.metroButton7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton7.Location = new System.Drawing.Point(168, 3);
+            this.metroButton7.Location = new System.Drawing.Point(167, 3);
             this.metroButton7.Name = "metroButton7";
             this.metroButton7.Size = new System.Drawing.Size(220, 23);
             this.metroButton7.TabIndex = 2;
@@ -2101,6 +2101,19 @@
             this.tableLayoutPanel18.Size = new System.Drawing.Size(322, 177);
             this.tableLayoutPanel18.TabIndex = 2;
             // 
+            // metroButton8
+            // 
+            this.metroButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroButton8.Location = new System.Drawing.Point(3, 149);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.Size = new System.Drawing.Size(316, 23);
+            this.metroButton8.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroButton8.TabIndex = 1;
+            this.metroButton8.Text = "Удалить";
+            this.metroButton8.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroButton8.UseSelectable = true;
+            this.metroButton8.Click += new System.EventHandler(this.metroButton8_Click);
+            // 
             // metroGrid4
             // 
             this.metroGrid4.AllowUserToResizeRows = false;
@@ -2154,18 +2167,25 @@
             this.metroGrid4.TabIndex = 0;
             this.metroGrid4.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // metroButton8
+            // Column23
             // 
-            this.metroButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton8.Location = new System.Drawing.Point(3, 149);
-            this.metroButton8.Name = "metroButton8";
-            this.metroButton8.Size = new System.Drawing.Size(316, 23);
-            this.metroButton8.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroButton8.TabIndex = 1;
-            this.metroButton8.Text = "Удалить";
-            this.metroButton8.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton8.UseSelectable = true;
-            this.metroButton8.Click += new System.EventHandler(this.metroButton8_Click);
+            this.Column23.HeaderText = "Название товара";
+            this.Column23.Name = "Column23";
+            // 
+            // Column24
+            // 
+            this.Column24.HeaderText = "Количество";
+            this.Column24.Name = "Column24";
+            // 
+            // Column25
+            // 
+            this.Column25.HeaderText = "Цена";
+            this.Column25.Name = "Column25";
+            // 
+            // Column26
+            // 
+            this.Column26.HeaderText = "Стоимость";
+            this.Column26.Name = "Column26";
             // 
             // metroButton11
             // 
@@ -2207,6 +2227,7 @@
             this.metroButton13.Text = "Редактировать";
             this.metroButton13.UseSelectable = true;
             this.metroButton13.Visible = false;
+            this.metroButton13.Click += new System.EventHandler(this.metroButton13_Click);
             // 
             // metroButton12
             // 
@@ -3277,26 +3298,6 @@
             this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
             this.найтиToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.найтиToolStripMenuItem.Text = "Найти";
-            // 
-            // Column23
-            // 
-            this.Column23.HeaderText = "Название товара";
-            this.Column23.Name = "Column23";
-            // 
-            // Column24
-            // 
-            this.Column24.HeaderText = "Количество";
-            this.Column24.Name = "Column24";
-            // 
-            // Column25
-            // 
-            this.Column25.HeaderText = "Цена";
-            this.Column25.Name = "Column25";
-            // 
-            // Column26
-            // 
-            this.Column26.HeaderText = "Стоимость";
-            this.Column26.Name = "Column26";
             // 
             // Zacaz
             // 
