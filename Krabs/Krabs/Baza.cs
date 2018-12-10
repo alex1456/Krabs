@@ -15,7 +15,7 @@ namespace Krabs
         {
             string serverName = "localhost";
             string userName = "root"; // Имя пользователя 
-            string dbName = "krabs"; //Имя базы данных 
+            string dbName = "newschema"; //Имя базы данных 
             string port = "3306"; // Порт для подключения 
             string password = "root"; // Пароль для подключения 
 
