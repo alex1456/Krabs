@@ -327,3 +327,4 @@ C:\Users\Алексей\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.cspro
 C:\Users\Алексей\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.csproj.CopyComplete
 C:\Users\Алексей\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.exe
 C:\Users\Алексей\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.pdb
+C:\Users\Алексей\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.Zacaz_red.resources

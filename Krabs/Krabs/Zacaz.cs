@@ -904,7 +904,7 @@ namespace Krabs
             }
             else
             {
-                sum1 = Convert.ToInt32(metroGrid6.CurrentRow.Cells[5].Value.ToString());
+               /* sum1 = Convert.ToInt32(metroGrid6.CurrentRow.Cells[5].Value.ToString());
                 metroTextBox14.Text = metroGrid6.CurrentRow.Cells[0].Value.ToString();
                 metroDateTime4.Value = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value.ToString());
                 metroDateTime5.Value = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[2].Value.ToString());
@@ -918,18 +918,34 @@ namespace Krabs
                 metroTextBox20.Text = metroGrid6.CurrentRow.Cells[10].Value.ToString();
                 metroTextBox21.Text = metroGrid6.CurrentRow.Cells[10].Value.ToString();
                 metroTextBox22.Text = metroGrid6.CurrentRow.Cells[11].Value.ToString();
-                metroTextBox25.Text = metroGrid6.CurrentRow.Cells[12].Value.ToString();
-                metroGrid4.Rows.Clear();
-                try
+                metroTextBox25.Text = metroGrid6.CurrentRow.Cells[12].Value.ToString();*/
+                Zacaz_red red = new Zacaz_red(metroGrid6.CurrentRow.Cells[0].Value.ToString(),
+                    metroGrid6.CurrentRow.Cells[1].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[2].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[3].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[6].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[13].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[7].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[8].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[9].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[10].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[11].Value.ToString(),
+                   metroGrid6.CurrentRow.Cells[12].Value.ToString(),
+                 metroGrid6.CurrentRow.Cells[4].Value.ToString(),
+                 metroGrid6.CurrentRow.Cells[5].Value.ToString()
+                   );
+                red.ShowDialog();
+                //metroGrid4.Rows.Clear();
+                /*try
                 {
                     for (int i = 0; i < metroGrid7.RowCount; i++)
                     {
                         metroGrid4.Rows.Add(metroGrid7.Rows[i].Cells[3].Value.ToString(), metroGrid7.Rows[i].Cells[4].Value.ToString(), metroGrid7.Rows[i].Cells[5].Value.ToString(), metroGrid7.Rows[i].Cells[6].Value.ToString());
                     }
                 }
-                catch (Exception ex) { }
-                metroButton13.Visible = true;
-                metroTabControl1.SelectedIndex = 2;
+                catch (Exception ex) { }*/
+                //metroButton13.Visible = true;
+                //metroTabControl1.SelectedIndex = 2;
             }
         }
 
