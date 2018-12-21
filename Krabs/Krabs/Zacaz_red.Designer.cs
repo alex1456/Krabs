@@ -130,7 +130,7 @@
             // 
             // 
             this.metroTextBox16.CustomButton.Image = null;
-            this.metroTextBox16.CustomButton.Location = new System.Drawing.Point(90, 1);
+            this.metroTextBox16.CustomButton.Location = new System.Drawing.Point(224, 1);
             this.metroTextBox16.CustomButton.Name = "";
             this.metroTextBox16.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox16.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -175,7 +175,7 @@
             // 
             // 
             this.metroTextBox15.CustomButton.Image = null;
-            this.metroTextBox15.CustomButton.Location = new System.Drawing.Point(77, 1);
+            this.metroTextBox15.CustomButton.Location = new System.Drawing.Point(222, 1);
             this.metroTextBox15.CustomButton.Name = "";
             this.metroTextBox15.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox15.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -288,6 +288,7 @@
             this.metroTextBox14.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox14.CustomButton.UseSelectable = true;
             this.metroTextBox14.CustomButton.Visible = false;
+            this.metroTextBox14.Enabled = false;
             this.metroTextBox14.Lines = new string[0];
             this.metroTextBox14.Location = new System.Drawing.Point(103, 36);
             this.metroTextBox14.MaxLength = 32767;
@@ -684,6 +685,7 @@
             this.metroButton2.Text = "Редактировать товар";
             this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // Zacaz_red
             // 

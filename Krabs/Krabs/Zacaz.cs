@@ -53,7 +53,7 @@ namespace Krabs
                     while (reader.Read())
                     {
                         // элементы массива [] - это значения столбцов из запроса SELECT
-                        metroGrid7.Rows.Add(reader["Id"].ToString(), reader["Compani"].ToString(), reader["Data"].ToString(), reader["Name"].ToString(), reader["col"].ToString(), reader["Cena"].ToString(), reader["Summa"].ToString());
+                        metroGrid7.Rows.Add(reader["Id"].ToString(), reader["Compani"].ToString(), reader["Data"].ToString(), reader["Name"].ToString(), reader["Cena"].ToString() , reader["col"].ToString(), reader["Summa"].ToString());
 
                     }
                     reader.Close();

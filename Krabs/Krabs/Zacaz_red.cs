@@ -34,6 +34,7 @@ namespace Krabs
             metroTextBox25.Text = predstav;
         }
 
+
         public void combo()
         {
             metroComboBox1.Items.Clear();
@@ -73,6 +74,12 @@ namespace Krabs
         private void metroDateTime4_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            tovar tovar = new tovar(metroDateTime4.Value.ToString("yyyy - MM - dd"),metroComboBox1.Text,Convert.ToInt32(metroTextBox16.Text));
+            tovar.ShowDialog();
         }
     }
 }

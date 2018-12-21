@@ -139,6 +139,12 @@
       <DependentUpon>Report_up.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="tovar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tovar.Designer.cs">
+      <DependentUpon>tovar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Zacaz.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report_up.resx">
       <DependentUpon>Report_up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tovar.resx">
+      <DependentUpon>tovar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zacaz.resx">
       <DependentUpon>Zacaz.cs</DependentUpon>
