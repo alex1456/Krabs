@@ -14,6 +14,7 @@ namespace Krabs
     public partial class tovar : MetroFramework.Forms.MetroForm
     {
         int sum1 = 0;
+        int sum2 = 0;
         string compani = "";
         string data = "";
         public tovar(string data,string compani,int sum)
@@ -21,6 +22,7 @@ namespace Krabs
             this.compani = compani;
             this.data = data;
             sum1 = sum;
+            sum2 = sum;
             InitializeComponent();
             metroTextBox2.Text = sum1.ToString();
             tabel1();
@@ -93,9 +95,10 @@ namespace Krabs
                 {
                     itog = Convert.ToDouble(cena) * Convert.ToDouble(numericUpDown1.Value.ToString());
                     col1 = Convert.ToInt32(col) - Convert.ToInt32(numericUpDown1.Value.ToString());
-                    Baza baza = new Baza();
+                    //Baza baza = new Baza();
                     //baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                     //tabel1();
+                    metroGrid5.CurrentRow.Cells[4].Value = col1;
                     metroGrid4.Rows.Add(name, numericUpDown1.Value.ToString(), cena, itog);
                     sum1 += Convert.ToInt32(itog);
                     metroTextBox2.Text = sum1.ToString();
@@ -110,9 +113,10 @@ namespace Krabs
                     itog = x - (x * y);
 
                     col1 = Convert.ToInt32(col) - Convert.ToInt32(numericUpDown1.Value.ToString());
-                    Baza baza = new Baza();
+                    //Baza baza = new Baza();
                     //baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                     //tabel1();
+                    metroGrid5.CurrentRow.Cells[4].Value = col1;
                     metroGrid4.Rows.Add(name, numericUpDown1.Value.ToString(), cena, itog);
                     sum1 += Convert.ToInt32(itog);
                     metroTextBox2.Text = sum1.ToString();
@@ -132,6 +136,7 @@ namespace Krabs
                     Baza baza = new Baza();
                     //baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                     //tabel1();
+                    metroGrid5.CurrentRow.Cells[4].Value = col1;
                     metroGrid4.Rows.Add(name, opis, numericUpDown1.Value.ToString(), cena, itog);
                     sum1 += Convert.ToInt32(itog);
                     metroTextBox2.Text = sum1.ToString();
@@ -149,6 +154,7 @@ namespace Krabs
                     Baza baza = new Baza();
                     //baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col1.ToString() + "' WHERE (`Id` = '" + id + "');");
                     //tabel1();
+                    metroGrid5.CurrentRow.Cells[4].Value = col1;
                     metroGrid4.Rows.Add(name, opis, numericUpDown1.Value.ToString(), cena, itog);
                     sum1 += Convert.ToInt32(itog);
                     metroTextBox2.Text = sum1.ToString();
@@ -169,6 +175,51 @@ namespace Krabs
             int a = metroGrid4.CurrentRow.Index;
             metroGrid4.Rows.Remove(metroGrid4.Rows[a]);
             metroTextBox2.Text = sum1.ToString();
+        }
+
+        public int idt()
+        {
+            int id = 0;
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM tovar", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                id++;
+
+            }
+            reader.Close();
+            conn.Close();
+            return id;
+
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+
+             Baza baza = new Baza();
+             for (int i = 0; i < metroGrid5.RowCount-1; i++)
+             {
+                 string id = metroGrid5.Rows[i].Cells[0].Value.ToString();
+                 string col = metroGrid5.Rows[i].Cells[4].Value.ToString();
+                 baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col.ToString() + "' WHERE (`Id` = '" + id + "');");
+             }
+            
+           
+
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            
+            metroTextBox2.Text = sum2.ToString();
+            tabel1();
+            tabel2();
+
         }
     }
     }
