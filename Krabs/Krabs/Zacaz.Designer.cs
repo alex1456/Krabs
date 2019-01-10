@@ -76,6 +76,7 @@
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox11 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox12 = new MetroFramework.Controls.MetroTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
@@ -136,6 +137,9 @@
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.распечататьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
@@ -231,14 +235,10 @@
             this.Column53 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column45 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
-            this.найтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.редактироватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.распечататьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.редактироватьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.печатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.найтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -248,6 +248,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.metroTabPage4.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.metroTabControl3.SuspendLayout();
             this.metroTabPage5.SuspendLayout();
@@ -283,7 +284,6 @@
             this.tableLayoutPanel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid6)).BeginInit();
             this.metroContextMenu1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -297,12 +297,13 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage8);
             this.metroTabControl1.Location = new System.Drawing.Point(3, 3);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(686, 492);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 0;
             this.metroTabControl1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabControl1.UseSelectable = true;
+            this.metroTabControl1.Click += new System.EventHandler(this.metroTabControl1_Click);
             // 
             // metroTabPage1
             // 
@@ -840,6 +841,18 @@
             this.metroTextBox12.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox12.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Location = new System.Drawing.Point(77, 70);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(275, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // metroButton4
             // 
             this.metroButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -982,7 +995,7 @@
             // 
             this.metroDateTime3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime3.Location = new System.Drawing.Point(129, 102);
-            this.metroDateTime3.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime3.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime3.Name = "metroDateTime3";
             this.metroDateTime3.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime3.Style = MetroFramework.MetroColorStyle.Green;
@@ -1005,7 +1018,7 @@
             // 
             this.metroDateTime2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime2.Location = new System.Drawing.Point(129, 67);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime2.Name = "metroDateTime2";
             this.metroDateTime2.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime2.Style = MetroFramework.MetroColorStyle.Green;
@@ -1086,7 +1099,7 @@
             // 
             this.metroDateTime1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime1.Location = new System.Drawing.Point(129, 32);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(4, 29);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Green;
@@ -1530,7 +1543,7 @@
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.14464F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.85536F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 278F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 281F));
             this.tableLayoutPanel10.Controls.Add(this.metroButton5, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton7, 1, 0);
@@ -1545,9 +1558,9 @@
             // 
             this.metroButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton5.Location = new System.Drawing.Point(390, 3);
+            this.metroButton5.Location = new System.Drawing.Point(387, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(273, 23);
+            this.metroButton5.Size = new System.Drawing.Size(276, 23);
             this.metroButton5.TabIndex = 0;
             this.metroButton5.Text = "Оформить заказ";
             this.metroButton5.UseSelectable = true;
@@ -1559,7 +1572,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton6.Location = new System.Drawing.Point(3, 3);
             this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(157, 23);
+            this.metroButton6.Size = new System.Drawing.Size(156, 23);
             this.metroButton6.TabIndex = 1;
             this.metroButton6.Text = "Очистить";
             this.metroButton6.UseSelectable = true;
@@ -1569,9 +1582,9 @@
             // 
             this.metroButton7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton7.Location = new System.Drawing.Point(166, 3);
+            this.metroButton7.Location = new System.Drawing.Point(165, 3);
             this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(218, 23);
+            this.metroButton7.Size = new System.Drawing.Size(216, 23);
             this.metroButton7.TabIndex = 2;
             this.metroButton7.Text = "Редактировать";
             this.metroButton7.UseSelectable = true;
@@ -1729,6 +1742,30 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(155, 70);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening_1);
+            // 
+            // редактироватьToolStripMenuItem
+            // 
+            this.редактироватьToolStripMenuItem.Image = global::Krabs.Properties.Resources._27_Edit_Text_256x256_35395;
+            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
+            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.редактироватьToolStripMenuItem.Text = "Редактировать";
+            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
+            // 
+            // удалитьToolStripMenuItem
+            // 
+            this.удалитьToolStripMenuItem.Image = global::Krabs.Properties.Resources.recycling_recyclebin_empty_delete_trash_1771;
+            this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
+            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.удалитьToolStripMenuItem.Text = "Удалить";
+            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
+            // 
+            // распечататьToolStripMenuItem
+            // 
+            this.распечататьToolStripMenuItem.Image = global::Krabs.Properties.Resources.print_46933;
+            this.распечататьToolStripMenuItem.Name = "распечататьToolStripMenuItem";
+            this.распечататьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.распечататьToolStripMenuItem.Text = "Распечатать";
+            this.распечататьToolStripMenuItem.Click += new System.EventHandler(this.распечататьToolStripMenuItem_Click);
             // 
             // metroTabPage2
             // 
@@ -2280,7 +2317,7 @@
             this.metroLabel26.AutoSize = true;
             this.metroLabel26.Location = new System.Drawing.Point(3, 45);
             this.metroLabel26.Name = "metroLabel26";
-            this.metroLabel26.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel26.Size = new System.Drawing.Size(82, 19);
             this.metroLabel26.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel26.TabIndex = 3;
             this.metroLabel26.Text = "Страна";
@@ -2292,7 +2329,7 @@
             this.metroLabel25.AutoSize = true;
             this.metroLabel25.Location = new System.Drawing.Point(3, 10);
             this.metroLabel25.Name = "metroLabel25";
-            this.metroLabel25.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel25.Size = new System.Drawing.Size(82, 19);
             this.metroLabel25.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel25.TabIndex = 1;
             this.metroLabel25.Text = "Кампания";
@@ -2305,7 +2342,7 @@
             // 
             // 
             this.metroTextBox17.CustomButton.Image = null;
-            this.metroTextBox17.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.metroTextBox17.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.metroTextBox17.CustomButton.Name = "";
             this.metroTextBox17.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox17.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -2314,7 +2351,7 @@
             this.metroTextBox17.CustomButton.UseSelectable = true;
             this.metroTextBox17.CustomButton.Visible = false;
             this.metroTextBox17.Lines = new string[0];
-            this.metroTextBox17.Location = new System.Drawing.Point(92, 43);
+            this.metroTextBox17.Location = new System.Drawing.Point(91, 43);
             this.metroTextBox17.MaxLength = 32767;
             this.metroTextBox17.Name = "metroTextBox17";
             this.metroTextBox17.PasswordChar = '\0';
@@ -2323,7 +2360,7 @@
             this.metroTextBox17.SelectionLength = 0;
             this.metroTextBox17.SelectionStart = 0;
             this.metroTextBox17.ShortcutsEnabled = true;
-            this.metroTextBox17.Size = new System.Drawing.Size(234, 23);
+            this.metroTextBox17.Size = new System.Drawing.Size(235, 23);
             this.metroTextBox17.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTextBox17.TabIndex = 4;
             this.metroTextBox17.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2337,9 +2374,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroComboBox1.FormattingEnabled = true;
             this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(92, 3);
+            this.metroComboBox1.Location = new System.Drawing.Point(91, 3);
             this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(234, 29);
+            this.metroComboBox1.Size = new System.Drawing.Size(235, 29);
             this.metroComboBox1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroComboBox1.TabIndex = 2;
             this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2352,7 +2389,7 @@
             this.metroLabel27.AutoSize = true;
             this.metroLabel27.Location = new System.Drawing.Point(3, 74);
             this.metroLabel27.Name = "metroLabel27";
-            this.metroLabel27.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel27.Size = new System.Drawing.Size(82, 19);
             this.metroLabel27.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel27.TabIndex = 5;
             this.metroLabel27.Text = "Адрес";
@@ -2365,7 +2402,7 @@
             // 
             // 
             this.metroTextBox18.CustomButton.Image = null;
-            this.metroTextBox18.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.metroTextBox18.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.metroTextBox18.CustomButton.Name = "";
             this.metroTextBox18.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox18.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -2374,7 +2411,7 @@
             this.metroTextBox18.CustomButton.UseSelectable = true;
             this.metroTextBox18.CustomButton.Visible = false;
             this.metroTextBox18.Lines = new string[0];
-            this.metroTextBox18.Location = new System.Drawing.Point(92, 72);
+            this.metroTextBox18.Location = new System.Drawing.Point(91, 72);
             this.metroTextBox18.MaxLength = 32767;
             this.metroTextBox18.Name = "metroTextBox18";
             this.metroTextBox18.PasswordChar = '\0';
@@ -2383,7 +2420,7 @@
             this.metroTextBox18.SelectionLength = 0;
             this.metroTextBox18.SelectionStart = 0;
             this.metroTextBox18.ShortcutsEnabled = true;
-            this.metroTextBox18.Size = new System.Drawing.Size(234, 23);
+            this.metroTextBox18.Size = new System.Drawing.Size(235, 23);
             this.metroTextBox18.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTextBox18.TabIndex = 6;
             this.metroTextBox18.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2397,7 +2434,7 @@
             this.metroLabel28.AutoSize = true;
             this.metroLabel28.Location = new System.Drawing.Point(3, 103);
             this.metroLabel28.Name = "metroLabel28";
-            this.metroLabel28.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel28.Size = new System.Drawing.Size(82, 19);
             this.metroLabel28.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel28.TabIndex = 7;
             this.metroLabel28.Text = "Почт.индекс";
@@ -2410,7 +2447,7 @@
             // 
             // 
             this.metroTextBox19.CustomButton.Image = null;
-            this.metroTextBox19.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.metroTextBox19.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.metroTextBox19.CustomButton.Name = "";
             this.metroTextBox19.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox19.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -2419,7 +2456,7 @@
             this.metroTextBox19.CustomButton.UseSelectable = true;
             this.metroTextBox19.CustomButton.Visible = false;
             this.metroTextBox19.Lines = new string[0];
-            this.metroTextBox19.Location = new System.Drawing.Point(92, 101);
+            this.metroTextBox19.Location = new System.Drawing.Point(91, 101);
             this.metroTextBox19.MaxLength = 32767;
             this.metroTextBox19.Name = "metroTextBox19";
             this.metroTextBox19.PasswordChar = '\0';
@@ -2428,7 +2465,7 @@
             this.metroTextBox19.SelectionLength = 0;
             this.metroTextBox19.SelectionStart = 0;
             this.metroTextBox19.ShortcutsEnabled = true;
-            this.metroTextBox19.Size = new System.Drawing.Size(234, 23);
+            this.metroTextBox19.Size = new System.Drawing.Size(235, 23);
             this.metroTextBox19.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTextBox19.TabIndex = 8;
             this.metroTextBox19.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2443,7 +2480,7 @@
             // 
             // 
             this.metroTextBox20.CustomButton.Image = null;
-            this.metroTextBox20.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.metroTextBox20.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.metroTextBox20.CustomButton.Name = "";
             this.metroTextBox20.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox20.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -2452,7 +2489,7 @@
             this.metroTextBox20.CustomButton.UseSelectable = true;
             this.metroTextBox20.CustomButton.Visible = false;
             this.metroTextBox20.Lines = new string[0];
-            this.metroTextBox20.Location = new System.Drawing.Point(92, 130);
+            this.metroTextBox20.Location = new System.Drawing.Point(91, 130);
             this.metroTextBox20.MaxLength = 32767;
             this.metroTextBox20.Name = "metroTextBox20";
             this.metroTextBox20.PasswordChar = '\0';
@@ -2461,7 +2498,7 @@
             this.metroTextBox20.SelectionLength = 0;
             this.metroTextBox20.SelectionStart = 0;
             this.metroTextBox20.ShortcutsEnabled = true;
-            this.metroTextBox20.Size = new System.Drawing.Size(234, 23);
+            this.metroTextBox20.Size = new System.Drawing.Size(235, 23);
             this.metroTextBox20.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTextBox20.TabIndex = 10;
             this.metroTextBox20.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2476,7 +2513,7 @@
             // 
             // 
             this.metroTextBox21.CustomButton.Image = null;
-            this.metroTextBox21.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.metroTextBox21.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.metroTextBox21.CustomButton.Name = "";
             this.metroTextBox21.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox21.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -2485,7 +2522,7 @@
             this.metroTextBox21.CustomButton.UseSelectable = true;
             this.metroTextBox21.CustomButton.Visible = false;
             this.metroTextBox21.Lines = new string[0];
-            this.metroTextBox21.Location = new System.Drawing.Point(92, 159);
+            this.metroTextBox21.Location = new System.Drawing.Point(91, 159);
             this.metroTextBox21.MaxLength = 32767;
             this.metroTextBox21.Name = "metroTextBox21";
             this.metroTextBox21.PasswordChar = '\0';
@@ -2494,7 +2531,7 @@
             this.metroTextBox21.SelectionLength = 0;
             this.metroTextBox21.SelectionStart = 0;
             this.metroTextBox21.ShortcutsEnabled = true;
-            this.metroTextBox21.Size = new System.Drawing.Size(234, 23);
+            this.metroTextBox21.Size = new System.Drawing.Size(235, 23);
             this.metroTextBox21.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTextBox21.TabIndex = 12;
             this.metroTextBox21.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2508,7 +2545,7 @@
             this.metroLabel30.AutoSize = true;
             this.metroLabel30.Location = new System.Drawing.Point(3, 132);
             this.metroLabel30.Name = "metroLabel30";
-            this.metroLabel30.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel30.Size = new System.Drawing.Size(82, 19);
             this.metroLabel30.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel30.TabIndex = 11;
             this.metroLabel30.Text = "Телефон";
@@ -2520,7 +2557,7 @@
             this.metroLabel29.AutoSize = true;
             this.metroLabel29.Location = new System.Drawing.Point(3, 161);
             this.metroLabel29.Name = "metroLabel29";
-            this.metroLabel29.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel29.Size = new System.Drawing.Size(82, 19);
             this.metroLabel29.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel29.TabIndex = 9;
             this.metroLabel29.Text = "Факс";
@@ -2533,7 +2570,7 @@
             // 
             // 
             this.metroTextBox22.CustomButton.Image = null;
-            this.metroTextBox22.CustomButton.Location = new System.Drawing.Point(212, 1);
+            this.metroTextBox22.CustomButton.Location = new System.Drawing.Point(213, 1);
             this.metroTextBox22.CustomButton.Name = "";
             this.metroTextBox22.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.metroTextBox22.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -2542,7 +2579,7 @@
             this.metroTextBox22.CustomButton.UseSelectable = true;
             this.metroTextBox22.CustomButton.Visible = false;
             this.metroTextBox22.Lines = new string[0];
-            this.metroTextBox22.Location = new System.Drawing.Point(92, 188);
+            this.metroTextBox22.Location = new System.Drawing.Point(91, 188);
             this.metroTextBox22.MaxLength = 32767;
             this.metroTextBox22.Name = "metroTextBox22";
             this.metroTextBox22.PasswordChar = '\0';
@@ -2551,7 +2588,7 @@
             this.metroTextBox22.SelectionLength = 0;
             this.metroTextBox22.SelectionStart = 0;
             this.metroTextBox22.ShortcutsEnabled = true;
-            this.metroTextBox22.Size = new System.Drawing.Size(234, 23);
+            this.metroTextBox22.Size = new System.Drawing.Size(235, 23);
             this.metroTextBox22.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTextBox22.TabIndex = 14;
             this.metroTextBox22.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -2565,7 +2602,7 @@
             this.metroLabel31.AutoSize = true;
             this.metroLabel31.Location = new System.Drawing.Point(3, 190);
             this.metroLabel31.Name = "metroLabel31";
-            this.metroLabel31.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel31.Size = new System.Drawing.Size(82, 19);
             this.metroLabel31.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel31.TabIndex = 13;
             this.metroLabel31.Text = "Email";
@@ -2760,7 +2797,7 @@
             // 
             this.metroDateTime6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime6.Location = new System.Drawing.Point(129, 102);
-            this.metroDateTime6.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime6.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime6.Name = "metroDateTime6";
             this.metroDateTime6.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime6.TabIndex = 7;
@@ -2781,7 +2818,7 @@
             // 
             this.metroDateTime5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime5.Location = new System.Drawing.Point(129, 67);
-            this.metroDateTime5.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime5.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime5.Name = "metroDateTime5";
             this.metroDateTime5.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime5.TabIndex = 5;
@@ -2847,7 +2884,7 @@
             // 
             this.metroDateTime4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime4.Location = new System.Drawing.Point(129, 32);
-            this.metroDateTime4.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime4.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime4.Name = "metroDateTime4";
             this.metroDateTime4.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime4.TabIndex = 3;
@@ -3235,48 +3272,6 @@
             this.metroContextMenu1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroContextMenu1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // найтиToolStripMenuItem
-            // 
-            this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
-            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.найтиToolStripMenuItem.Text = "Найти";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(77, 70);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(275, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // редактироватьToolStripMenuItem
-            // 
-            this.редактироватьToolStripMenuItem.Image = global::Krabs.Properties.Resources._27_Edit_Text_256x256_35395;
-            this.редактироватьToolStripMenuItem.Name = "редактироватьToolStripMenuItem";
-            this.редактироватьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.редактироватьToolStripMenuItem.Text = "Редактировать";
-            this.редактироватьToolStripMenuItem.Click += new System.EventHandler(this.редактироватьToolStripMenuItem_Click);
-            // 
-            // удалитьToolStripMenuItem
-            // 
-            this.удалитьToolStripMenuItem.Image = global::Krabs.Properties.Resources.recycling_recyclebin_empty_delete_trash_1771;
-            this.удалитьToolStripMenuItem.Name = "удалитьToolStripMenuItem";
-            this.удалитьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.удалитьToolStripMenuItem.Text = "Удалить";
-            this.удалитьToolStripMenuItem.Click += new System.EventHandler(this.удалитьToolStripMenuItem_Click);
-            // 
-            // распечататьToolStripMenuItem
-            // 
-            this.распечататьToolStripMenuItem.Image = global::Krabs.Properties.Resources.print_46933;
-            this.распечататьToolStripMenuItem.Name = "распечататьToolStripMenuItem";
-            this.распечататьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.распечататьToolStripMenuItem.Text = "Распечатать";
-            this.распечататьToolStripMenuItem.Click += new System.EventHandler(this.распечататьToolStripMenuItem_Click);
-            // 
             // редактироватьToolStripMenuItem1
             // 
             this.редактироватьToolStripMenuItem1.Image = global::Krabs.Properties.Resources._27_Edit_Text_256x256_35395;
@@ -3291,6 +3286,7 @@
             this.удалитьToolStripMenuItem1.Name = "удалитьToolStripMenuItem1";
             this.удалитьToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
             this.удалитьToolStripMenuItem1.Text = "Удалить";
+            this.удалитьToolStripMenuItem1.Click += new System.EventHandler(this.удалитьToolStripMenuItem1_Click);
             // 
             // печатьToolStripMenuItem
             // 
@@ -3298,6 +3294,12 @@
             this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
             this.печатьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.печатьToolStripMenuItem.Text = "Печать";
+            // 
+            // найтиToolStripMenuItem
+            // 
+            this.найтиToolStripMenuItem.Name = "найтиToolStripMenuItem";
+            this.найтиToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.найтиToolStripMenuItem.Text = "Найти";
             // 
             // Zacaz
             // 
@@ -3319,6 +3321,7 @@
             this.metroTabPage4.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.metroTabControl3.ResumeLayout(false);
@@ -3363,7 +3366,6 @@
             this.tableLayoutPanel22.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid6)).EndInit();
             this.metroContextMenu1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

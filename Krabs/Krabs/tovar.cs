@@ -208,8 +208,27 @@ namespace Krabs
                  string col = metroGrid5.Rows[i].Cells[4].Value.ToString();
                  baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col.ToString() + "' WHERE (`Id` = '" + id + "');");
              }
+
             
-           
+            for (int i = 0; i < metroGrid4.RowCount; i++)
+            {
+                try
+                {
+                    if (metroGrid4.Rows[i].Cells[2].Value.ToString() == "")
+                    {
+
+                    }
+                    else
+                    {
+
+                        baza.SQLExute("INSERT INTO `krabs`.`tovar` (`Id`, `Compani`, `Data`, `Name`, `col`, `Cena`, `Summa`) VALUES ('" + (idt() + 1) + "', '" + compani+ "','" + data + "', '" + metroGrid4.Rows[i].Cells[0].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[1].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[2].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[3].Value.ToString() + "');");
+                    }
+
+                }
+                catch (Exception ex) { }
+
+
+            }
 
         }
 

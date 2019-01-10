@@ -42,10 +42,11 @@ namespace Krabs
                     Baza baza = new Baza();
                     string comp = metroGrid6.CurrentRow.Cells[6].Value.ToString();
                     DateTime dt1 = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value);
-
-                    //MessageBox.Show(comp + " " + data);
-                    MySqlConnection conn = baza.GetConnection();
-                    MySqlCommand command = new MySqlCommand("SELECT * FROM tovar WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "'", conn);
+                
+                // WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "' AND Data = '" + dt1.ToString("yyyy-MM-dd") + "'
+                //MessageBox.Show(comp + " " + data);
+                MySqlConnection conn = baza.GetConnection();
+                    MySqlCommand command = new MySqlCommand("SELECT * FROM `krabs`.`tovar_m` WHERE Compani='" + comp + "' AND Data = '" + dt1.ToString("yyyy-MM-dd") +"' ", conn);
                     // объект для чтения ответа сервера
                     conn.Open();
                     MySqlDataReader reader = command.ExecuteReader();
@@ -88,7 +89,7 @@ namespace Krabs
             int id = 0;
             Baza baza = new Baza();
             MySqlConnection conn = baza.GetConnection();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM tovar", conn);
+            MySqlCommand command = new MySqlCommand("SELECT * FROM tovar_m", conn);
             // объект для чтения ответа сервера
             conn.Open();
             MySqlDataReader reader = command.ExecuteReader();
@@ -808,6 +809,7 @@ namespace Krabs
 
         private void metroButton11_Click(object sender, EventArgs e)
         {
+            Baza baza = new Baza();
             if (metroTextBox14.Text == "" || metroTextBox15.Text == "" || metroTextBox16.Text == "" || metroTextBox17.Text == "" || metroTextBox18.Text == "" ||
              metroTextBox19.Text == "" || metroTextBox20.Text == "" || metroTextBox21.Text == "" || metroTextBox22.Text == "" || metroTextBox25.Text == ""
              || metroComboBox1.Text == "")
@@ -817,26 +819,25 @@ namespace Krabs
             }
             else
             {
-                
-                Baza baza = new Baza();
-                for(int i = 0; i < metroGrid4.RowCount; i++)
+
+                int id = idt();
+                for (int i = 0;  i <metroGrid4.RowCount; i++)
                 {
-                    try
-                    {
-                        if (metroGrid4.Rows[i].Cells[2].Value.ToString()=="")
-                        {
-
-                        }
-                        else
-                        {
-
-                            baza.SQLExute("INSERT INTO `krabs`.`tovar` (`Id`, `Compani`, `Data`, `Name`, `col`, `Cena`, `Summa`) VALUES ('" + (idt()+1) + "', '" + metroComboBox1.Text + "','" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroGrid4.Rows[i].Cells[1].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[2].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[3].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[4].Value.ToString() + "');");
-                        }
+                    try {
                         
-                    }catch(Exception ex) { }
+                        string name = metroGrid4.Rows[i].Cells[0].Value.ToString();
+                        string col = metroGrid4.Rows[i].Cells[1].Value.ToString();
+                        string cena = metroGrid4.Rows[i].Cells[2].Value.ToString();
+                        string sum = metroGrid4.Rows[i].Cells[3].Value.ToString();
+                        //MessageBox.Show(name + " " + col + " " + cena + " " + sum);
+                        //baza.SQLExute(" INSERT INTO tovar_m (`Id`, `Compani`,`Name`) VALUES("+(id+1)+", '" + metroComboBox1.Text + "','" + name + "')");
+                        baza.SQLExute(" INSERT INTO `krabs`.`tovar_m` (`Id`, `Compani`, `Data`, `Name`, `Col`, `Cena`, `Summa`) VALUES(" + (id + 1) + ", '" + metroComboBox1.Text + "', '"+metroDateTime4.Value.ToString("yyyy-MM-dd")+ "', '" + name + "', '"+col+"', '"+cena+"', '"+sum+"');");
+                        id++;
+            }
+                    catch { }
                     
-
                 }
+            
 
                 baza.SQLExute("INSERT INTO `krabs`.`zacaz_p` (`Id`, `Data_oform`, `Data_sdachi`, `Data_oplaty`, `Scidca`,`Summa`, `Compani`, `Country`, `Addres`,`Pocht`, `phone`,`Fax`, `Email`,`Predstav`) VALUES ('" + metroTextBox14.Text + "', '" + metroDateTime4.Value.ToString("yyyy-MM-dd") + "', '" + metroDateTime5.Value.ToString("yyyy-MM-dd") + "', '" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroTextBox15.Text + "', '" + metroTextBox16.Text + "', '" + metroComboBox1.Text + "', '" + metroTextBox17.Text + "', '" + metroTextBox18.Text + "', '" + metroTextBox19.Text + "',  '" + metroTextBox20.Text + "', '" + metroTextBox21.Text + "', '" + metroTextBox22.Text + "', '" + metroTextBox25.Text + "');");
                 //tabel3();
@@ -844,6 +845,7 @@ namespace Krabs
                 //report.ShowDialog();
 
                 clearcom();
+                tabel5();
             }
         }
 
@@ -1006,11 +1008,11 @@ namespace Krabs
                             catch (Exception ex) { }
                             if (res == name)
                             {
-                                baza.SQLExute("UPDATE `krabs`.`tovar` SET `col` = '"+col+"', `Summa` = '"+sum+"'  WHERE (`Name` = '" + name+"');");
+                                baza.SQLExute("UPDATE `krabs`.`tovar_m` SET `col` = '"+col+"', `Summa` = '"+sum+"'  WHERE (`Name` = '" + name+"');");
                             }
                             else
                             {
-                                baza.SQLExute("INSERT INTO `krabs`.`tovar` (`Id`, `Compani`, `Data`, `Name`, `col`, `Cena`, `Summa`) VALUES ('" + (idt() + 1) + "', '" + metroComboBox1.Text + "','" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroGrid4.Rows[i].Cells[1].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[2].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[3].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[4].Value.ToString() + "');");
+                                baza.SQLExute("INSERT INTO `krabs`.`tovar_m` (`Id`, `Compani`, `Data`, `Name`, `col`, `Cena`, `Summa`) VALUES ('" + (idt() + 1) + "', '" + metroComboBox1.Text + "','" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroGrid4.Rows[i].Cells[1].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[2].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[3].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[4].Value.ToString() + "');");
                             }
                            
 
@@ -1031,6 +1033,16 @@ namespace Krabs
                 metroButton13.Visible = false;
                 metroTabControl1.SelectedIndex = 3;
             }
+        }
+
+        private void удалитьToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTabControl1_Click(object sender, EventArgs e)
+        {
+            tabel5();
         }
     }
 }
