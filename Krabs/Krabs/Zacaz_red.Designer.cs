@@ -724,7 +724,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel24;
         public MetroFramework.Controls.MetroTextBox metroTextBox16;
         private MetroFramework.Controls.MetroLabel metroLabel23;
-        private MetroFramework.Controls.MetroTextBox metroTextBox15;
+        public MetroFramework.Controls.MetroTextBox metroTextBox15;
         private MetroFramework.Controls.MetroLabel metroLabel22;
         private MetroFramework.Controls.MetroDateTime metroDateTime6;
         private MetroFramework.Controls.MetroLabel metroLabel21;

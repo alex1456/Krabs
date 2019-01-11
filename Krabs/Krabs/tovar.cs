@@ -215,7 +215,7 @@ namespace Krabs
 
             DateTime dt1 = Convert.ToDateTime(data);
             //MessageBox.Show(ident[i].ToString());
-            baza.SQLExute(" DELETE FROM `krabs`.`tovar_m` WHERE Data = '" + dt1.ToString("yyyy-MM-dd") + "';");
+            baza.SQLExute(" DELETE FROM `krabs`.`tovar_m` WHERE Data = '" + dt1.ToString("yyyy-MM-dd") + "' AND Compani='"+compani+"';");
             
             
                     
@@ -241,6 +241,7 @@ namespace Krabs
             }
             Zacaz_red zacaz = Application.OpenForms["Zacaz_red"] as Zacaz_red;
             zacaz.metroTextBox16.Text = metroTextBox2.Text;
+            zacaz.metroTextBox15.Text = metroTextBox1.Text;
             //zacaz.Refresh();
             this.Close();
 

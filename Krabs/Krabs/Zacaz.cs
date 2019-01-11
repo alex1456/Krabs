@@ -1037,12 +1037,28 @@ namespace Krabs
 
         private void удалитьToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            DateTime t = Convert.ToDateTime(metroGrid6.CurrentRow.Cells[1].Value.ToString());
+            Baza baza = new Baza();
+            baza.SQLExute("DELETE FROM `krabs`.`zacaz_p` WHERE (`Id` = '"+ metroGrid6.CurrentRow.Cells[0].Value.ToString() + "');");
+            baza.SQLExute("DELETE FROM `krabs`.`tovar_m` WHERE Data = '" + t.ToString("yyyy-MM-dd") + "' AND Compani='" + metroGrid6.CurrentRow.Cells[6].Value.ToString() + "';");
+            tabel5();
+            metroGrid7.Rows.Clear();
 
         }
 
         private void metroTabControl1_Click(object sender, EventArgs e)
         {
             tabel5();
+        }
+
+        private void metroContextMenu1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void metroGrid7_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
