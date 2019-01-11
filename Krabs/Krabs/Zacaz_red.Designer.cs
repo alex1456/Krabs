@@ -439,7 +439,7 @@
             this.metroLabel28.AutoSize = true;
             this.metroLabel28.Location = new System.Drawing.Point(6, 118);
             this.metroLabel28.Name = "metroLabel28";
-            this.metroLabel28.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel28.Size = new System.Drawing.Size(82, 19);
             this.metroLabel28.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel28.TabIndex = 34;
             this.metroLabel28.Text = "Почт.индекс";
@@ -674,6 +674,7 @@
             this.metroButton1.Text = "Редактировать";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
@@ -721,7 +722,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel34;
         private MetroFramework.Controls.MetroTextBox metroTextBox25;
         private MetroFramework.Controls.MetroLabel metroLabel24;
-        private MetroFramework.Controls.MetroTextBox metroTextBox16;
+        public MetroFramework.Controls.MetroTextBox metroTextBox16;
         private MetroFramework.Controls.MetroLabel metroLabel23;
         private MetroFramework.Controls.MetroTextBox metroTextBox15;
         private MetroFramework.Controls.MetroLabel metroLabel22;

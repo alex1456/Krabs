@@ -34,6 +34,12 @@ namespace Krabs
             metroTextBox25.Text = predstav;
         }
 
+        public Zacaz_red()
+        {
+            InitializeComponent();
+            
+        }
+
 
         public void combo()
         {
@@ -80,6 +86,11 @@ namespace Krabs
         {
             tovar tovar = new tovar(metroDateTime4.Value.ToString("yyyy - MM - dd"),metroComboBox1.Text,Convert.ToInt32(metroTextBox16.Text));
             tovar.ShowDialog();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -11,8 +11,9 @@ using System.Windows.Forms;
 
 namespace Krabs
 {
-    public partial class tovar : MetroFramework.Forms.MetroForm
+    public partial class tovar : MetroFramework.Forms.MetroForm 
     {
+        
         int sum1 = 0;
         int sum2 = 0;
         string compani = "";
@@ -41,7 +42,7 @@ namespace Krabs
 
                 //MessageBox.Show(comp + " " + data);
                 MySqlConnection conn = baza.GetConnection();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM tovar WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "'", conn);
+                MySqlCommand command = new MySqlCommand("SELECT * FROM tovar_m WHERE Compani='" + comp + "' AND Data='" + dt1.ToString("yyyy-MM-dd") + "'", conn);
                 // объект для чтения ответа сервера
                 conn.Open();
                 MySqlDataReader reader = command.ExecuteReader();
@@ -182,7 +183,7 @@ namespace Krabs
             int id = 0;
             Baza baza = new Baza();
             MySqlConnection conn = baza.GetConnection();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM tovar", conn);
+            MySqlCommand command = new MySqlCommand("SELECT * FROM tovar_m", conn);
             // объект для чтения ответа сервера
             conn.Open();
             MySqlDataReader reader = command.ExecuteReader();
@@ -198,6 +199,8 @@ namespace Krabs
 
         }
 
+     
+
         private void metroButton2_Click(object sender, EventArgs e)
         {
 
@@ -209,26 +212,37 @@ namespace Krabs
                  baza.SQLExute("UPDATE `krabs`.`price_m` SET `Coll` = '" + col.ToString() + "' WHERE (`Id` = '" + id + "');");
              }
 
+
+            DateTime dt1 = Convert.ToDateTime(data);
+            //MessageBox.Show(ident[i].ToString());
+            baza.SQLExute(" DELETE FROM `krabs`.`tovar_m` WHERE Data = '" + dt1.ToString("yyyy-MM-dd") + "';");
             
+            
+                    
+          
+
+            int id1 = idt();
             for (int i = 0; i < metroGrid4.RowCount; i++)
             {
                 try
                 {
-                    if (metroGrid4.Rows[i].Cells[2].Value.ToString() == "")
-                    {
 
-                    }
-                    else
-                    {
-
-                        baza.SQLExute("INSERT INTO `krabs`.`tovar` (`Id`, `Compani`, `Data`, `Name`, `col`, `Cena`, `Summa`) VALUES ('" + (idt() + 1) + "', '" + compani+ "','" + data + "', '" + metroGrid4.Rows[i].Cells[0].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[1].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[2].Value.ToString() + "', '" + metroGrid4.Rows[i].Cells[3].Value.ToString() + "');");
-                    }
-
+                    string name = metroGrid4.Rows[i].Cells[0].Value.ToString();
+                    string col = metroGrid4.Rows[i].Cells[1].Value.ToString();
+                    string cena = metroGrid4.Rows[i].Cells[2].Value.ToString();
+                    string sum = metroGrid4.Rows[i].Cells[3].Value.ToString();
+                    //MessageBox.Show(name + " " + col + " " + cena + " " + sum);
+                    //baza.SQLExute(" INSERT INTO tovar_m (`Id`, `Compani`,`Name`) VALUES("+(id+1)+", '" + metroComboBox1.Text + "','" + name + "')");
+                    baza.SQLExute(" INSERT INTO `krabs`.`tovar_m` (`Id`, `Compani`, `Data`, `Name`, `Col`, `Cena`, `Summa`) VALUES(" + (id1 + 1) + ", '" + compani + "', '" +dt1.ToString("yyyy-MM-dd") + "', '" + name + "', '" + col + "', '" + cena + "', '" + sum + "');");
+                    id1++;
                 }
-                catch (Exception ex) { }
-
+                catch { }
 
             }
+            Zacaz_red zacaz = Application.OpenForms["Zacaz_red"] as Zacaz_red;
+            zacaz.metroTextBox16.Text = metroTextBox2.Text;
+            //zacaz.Refresh();
+            this.Close();
 
         }
 
