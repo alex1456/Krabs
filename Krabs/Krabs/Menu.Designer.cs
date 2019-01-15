@@ -36,6 +36,8 @@
             this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile4 = new MetroFramework.Controls.MetroTile();
+            this.metroTile6 = new MetroFramework.Controls.MetroTile();
+            this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.tableLayoutPanel1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -84,9 +86,13 @@
             this.tableLayoutPanel2.Controls.Add(this.metroTile2, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.metroTile3, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.metroTile4, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.metroTile6, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.metroTile5, 0, 5);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowCount = 7;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -183,6 +189,41 @@
             this.metroTile4.UseTileImage = true;
             this.metroTile4.Click += new System.EventHandler(this.metroTile4_Click);
             // 
+            // metroTile6
+            // 
+            this.metroTile6.ActiveControl = null;
+            this.metroTile6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTile6.Location = new System.Drawing.Point(3, 282);
+            this.metroTile6.Name = "metroTile6";
+            this.metroTile6.Size = new System.Drawing.Size(181, 63);
+            this.metroTile6.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile6.TabIndex = 5;
+            this.metroTile6.Text = "Распределение \r\nзаказоы";
+            this.metroTile6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile6.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile6.TileImage = global::Krabs.Properties.Resources.contactlist_theuser_802;
+            this.metroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile6.UseSelectable = true;
+            this.metroTile6.UseTileImage = true;
+            this.metroTile6.Click += new System.EventHandler(this.metroTile6_Click);
+            // 
+            // metroTile5
+            // 
+            this.metroTile5.ActiveControl = null;
+            this.metroTile5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.metroTile5.Location = new System.Drawing.Point(3, 351);
+            this.metroTile5.Name = "metroTile5";
+            this.metroTile5.Size = new System.Drawing.Size(181, 63);
+            this.metroTile5.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroTile5.TabIndex = 4;
+            this.metroTile5.Text = "    Email рассылка";
+            this.metroTile5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile5.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTile5.TileImage = global::Krabs.Properties.Resources.email_mail_4598;
+            this.metroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroTile5.UseSelectable = true;
+            this.metroTile5.UseTileImage = true;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,5 +252,7 @@
         private MetroFramework.Controls.MetroTile metroTile1;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile4;
+        private MetroFramework.Controls.MetroTile metroTile6;
+        private MetroFramework.Controls.MetroTile metroTile5;
     }
 }

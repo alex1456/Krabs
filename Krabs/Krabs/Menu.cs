@@ -76,6 +76,24 @@ namespace Krabs
             report.reportViewer1.RefreshReport();
         }
 
+        public void ras_pred()
+        {
+            
+
+            this.Text = "";
+            this.Text = "Распределение заказов";
+            //report.reportViewer1.ProcessingMode = ProcessingMode.Local;
+            //report.reportViewer1.LocalReport.ReportPath = "Zacaz_u.rdlc";
+            // report.reportViewer1.RefreshReport();
+            metroPanel2.Controls.Clear();
+
+            var Control = new Krabs.Raspred();
+
+            Control.Dock = DockStyle.Fill;
+            metroPanel2.Controls.Add(Control);
+            
+        }
+
         private void metroTile1_Click(object sender, EventArgs e)
         {
             klient();
@@ -95,6 +113,11 @@ namespace Krabs
         {
            
             Report();
+        }
+
+        private void metroTile6_Click(object sender, EventArgs e)
+        {
+            ras_pred();
         }
     }
 }

@@ -441,3 +441,4 @@ C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.Entity.EF6
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EntityFramework.xml
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.Raspred.resources

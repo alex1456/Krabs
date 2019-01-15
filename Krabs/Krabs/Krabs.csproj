@@ -128,6 +128,11 @@
     <Compile Include="Klient.Designer.cs">
       <DependentUpon>Klient.cs</DependentUpon>
     </Compile>
+    <Compile Include="krabs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>krabs.xsd</DependentUpon>
+    </Compile>
     <Compile Include="krabsDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -147,6 +152,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raspred.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Raspred.Designer.cs">
+      <DependentUpon>Raspred.cs</DependentUpon>
+    </Compile>
     <Compile Include="report.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -206,6 +217,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Raspred.resx">
+      <DependentUpon>Raspred.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="report.resx">
       <DependentUpon>report.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +237,17 @@
       <DependentUpon>Zacaz_red.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zacaz_u.rdlc" />
+    <None Include="krabs.xsc">
+      <DependentUpon>krabs.xsd</DependentUpon>
+    </None>
+    <None Include="krabs.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>krabs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="krabs.xss">
+      <DependentUpon>krabs.xsd</DependentUpon>
+    </None>
     <None Include="krabsDataSet3.xsc">
       <DependentUpon>krabsDataSet3.xsd</DependentUpon>
     </None>
@@ -275,6 +300,12 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\metro_email_11435.png" />
+    <None Include="Resources\metro_email_11435 %281%29.png" />
+    <None Include="Resources\email_icon-icons.com_66532.png" />
+    <None Include="Resources\email_icon-icons.com_66532 %281%29.png" />
+    <None Include="Resources\email_mail_4598.png" />
+    <None Include="Resources\contactlist_theuser_802.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

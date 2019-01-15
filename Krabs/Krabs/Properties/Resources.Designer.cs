@@ -93,9 +93,49 @@ namespace Krabs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap contactlist_theuser_802 {
+            get {
+                object obj = ResourceManager.GetObject("contactlist_theuser_802", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap contacts_address_book_22972 {
             get {
                 object obj = ResourceManager.GetObject("contacts_address_book_22972", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap email_icon_icons_com_66532 {
+            get {
+                object obj = ResourceManager.GetObject("email_icon-icons.com_66532", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap email_icon_icons_com_66532__1_ {
+            get {
+                object obj = ResourceManager.GetObject("email_icon-icons.com_66532 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap email_mail_4598 {
+            get {
+                object obj = ResourceManager.GetObject("email_mail_4598", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +186,26 @@ namespace Krabs.Properties {
         internal static System.Drawing.Bitmap live_contacts_15412 {
             get {
                 object obj = ResourceManager.GetObject("live_contacts_15412", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap metro_email_11435 {
+            get {
+                object obj = ResourceManager.GetObject("metro_email_11435", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap metro_email_11435__1_ {
+            get {
+                object obj = ResourceManager.GetObject("metro_email_11435 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

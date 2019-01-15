@@ -43,5 +43,16 @@ namespace Krabs.Properties {
                 return ((string)(this["krabsConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;persistsecurityinfo=True;port=3310;database=krabs;a" +
+            "llowuservariables=True")]
+        public string krabsConnectionString1 {
+            get {
+                return ((string)(this["krabsConnectionString1"]));
+            }
+        }
     }
 }
