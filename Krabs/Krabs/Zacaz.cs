@@ -841,8 +841,9 @@ namespace Krabs
 
                 baza.SQLExute("INSERT INTO `krabs`.`zacaz_p` (`Id`, `Data_oform`, `Data_sdachi`, `Data_oplaty`, `Scidca`,`Summa`, `Compani`, `Country`, `Addres`,`Pocht`, `phone`,`Fax`, `Email`,`Predstav`) VALUES ('" + metroTextBox14.Text + "', '" + metroDateTime4.Value.ToString("yyyy-MM-dd") + "', '" + metroDateTime5.Value.ToString("yyyy-MM-dd") + "', '" + metroDateTime6.Value.ToString("yyyy-MM-dd") + "', '" + metroTextBox15.Text + "', '" + metroTextBox16.Text + "', '" + metroComboBox1.Text + "', '" + metroTextBox17.Text + "', '" + metroTextBox18.Text + "', '" + metroTextBox19.Text + "',  '" + metroTextBox20.Text + "', '" + metroTextBox21.Text + "', '" + metroTextBox22.Text + "', '" + metroTextBox25.Text + "');");
                 //tabel3();
-                //Report_up report = new Report_up(metroTextBox1.Text, metroDateTime1.Value.ToString("dd/MM/yyyy"), metroDateTime2.Value.ToString("dd/MM/yyyy"), metroDateTime3.Value.ToString("dd/MM/yyyy"), metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, metroTextBox6.Text, metroTextBox7.Text, metroTextBox8.Text, list, metroTextBox2.Text);
-                //report.ShowDialog();
+                Report_up report = new Report_up(metroTextBox14.Text,metroDateTime4.Value.ToString("yyyy-MM-dd") , metroDateTime5.Value.ToString("yyyy-MM-dd"), metroDateTime6.Value.ToString("yyyy-MM-dd"),
+                    metroTextBox16.Text, metroTextBox25.Text, metroComboBox1.Text, metroTextBox19.Text, metroTextBox20.Text, metroTextBox21.Text, metroTextBox22.Text, metroTextBox17.Text, metroTextBox15.Text);
+                report.ShowDialog();
 
                 clearcom();
                 tabel5();
@@ -1059,6 +1060,16 @@ namespace Krabs
         private void metroGrid7_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void печатьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Report_up report = new Report_up(metroGrid6.CurrentRow.Cells[0].Value.ToString(), metroGrid6.CurrentRow.Cells[1].Value.ToString(),
+                metroGrid6.CurrentRow.Cells[2].Value.ToString(), metroGrid6.CurrentRow.Cells[3].Value.ToString(), metroGrid6.CurrentRow.Cells[5].Value.ToString(),
+                metroGrid6.CurrentRow.Cells[13].Value.ToString(), metroGrid6.CurrentRow.Cells[6].Value.ToString(), metroGrid6.CurrentRow.Cells[9].Value.ToString(),
+                metroGrid6.CurrentRow.Cells[11].Value.ToString(), metroGrid6.CurrentRow.Cells[12].Value.ToString(), metroGrid6.CurrentRow.Cells[12].Value.ToString(),
+                metroGrid6.CurrentRow.Cells[7].Value.ToString(), metroGrid6.CurrentRow.Cells[4].Value.ToString());
+            report.ShowDialog();
         }
     }
 }

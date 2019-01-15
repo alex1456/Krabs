@@ -43,6 +43,10 @@
             this.Column30 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column31 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroGrid4 = new MetroFramework.Controls.MetroGrid();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.удалитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -54,14 +58,17 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tovarmBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.krabsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.krabsDataSet = new Krabs.krabsDataSet();
+            this.tovar_mTableAdapter = new Krabs.krabsDataSetTableAdapters.tovar_mTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid4)).BeginInit();
             this.metroContextMenu1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tovarmBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.krabsDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.krabsDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // metroGrid5
@@ -201,6 +208,26 @@
             this.metroGrid4.Style = MetroFramework.MetroColorStyle.Green;
             this.metroGrid4.TabIndex = 2;
             this.metroGrid4.Theme = MetroFramework.MetroThemeStyle.Light;
+            // 
+            // Column23
+            // 
+            this.Column23.HeaderText = "Название товара";
+            this.Column23.Name = "Column23";
+            // 
+            // Column24
+            // 
+            this.Column24.HeaderText = "Количество";
+            this.Column24.Name = "Column24";
+            // 
+            // Column25
+            // 
+            this.Column25.HeaderText = "Цена";
+            this.Column25.Name = "Column25";
+            // 
+            // Column26
+            // 
+            this.Column26.HeaderText = "Стоимость";
+            this.Column26.Name = "Column26";
             // 
             // metroContextMenu1
             // 
@@ -355,25 +382,24 @@
             this.metroButton3.UseSelectable = true;
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
-            // Column23
+            // tovarmBindingSource
             // 
-            this.Column23.HeaderText = "Название товара";
-            this.Column23.Name = "Column23";
+            this.tovarmBindingSource.DataMember = "tovar_m";
+            this.tovarmBindingSource.DataSource = this.krabsDataSetBindingSource;
             // 
-            // Column24
+            // krabsDataSetBindingSource
             // 
-            this.Column24.HeaderText = "Количество";
-            this.Column24.Name = "Column24";
+            this.krabsDataSetBindingSource.DataSource = this.krabsDataSet;
+            this.krabsDataSetBindingSource.Position = 0;
             // 
-            // Column25
+            // krabsDataSet
             // 
-            this.Column25.HeaderText = "Цена";
-            this.Column25.Name = "Column25";
+            this.krabsDataSet.DataSetName = "krabsDataSet";
+            this.krabsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Column26
+            // tovar_mTableAdapter
             // 
-            this.Column26.HeaderText = "Стоимость";
-            this.Column26.Name = "Column26";
+            this.tovar_mTableAdapter.ClearBeforeFill = true;
             // 
             // tovar
             // 
@@ -395,10 +421,14 @@
             this.MinimizeBox = false;
             this.Name = "tovar";
             this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Load += new System.EventHandler(this.tovar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid4)).EndInit();
             this.metroContextMenu1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tovarmBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.krabsDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.krabsDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,5 +459,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column25;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column26;
+        private System.Windows.Forms.BindingSource krabsDataSetBindingSource;
+        private krabsDataSet krabsDataSet;
+        private System.Windows.Forms.BindingSource tovarmBindingSource;
+        private krabsDataSetTableAdapters.tovar_mTableAdapter tovar_mTableAdapter;
     }
 }

@@ -34,18 +34,18 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Krabs.Report2.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Krabs.Zacaz_u.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(20, 60);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(760, 370);
+            this.reportViewer1.Size = new System.Drawing.Size(760, 414);
             this.reportViewer1.TabIndex = 0;
             // 
             // Report_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 494);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Report_up";
             this.Style = MetroFramework.MetroColorStyle.Green;
@@ -56,6 +56,6 @@
 
         #endregion
 
-        public Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

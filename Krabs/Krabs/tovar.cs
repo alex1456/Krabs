@@ -255,6 +255,13 @@ namespace Krabs
             tabel2();
 
         }
+
+        private void tovar_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "krabsDataSet.tovar_m". При необходимости она может быть перемещена или удалена.
+            this.tovar_mTableAdapter.Fill(this.krabsDataSet.tovar_m);
+
+        }
     }
     }
 

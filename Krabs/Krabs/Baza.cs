@@ -13,18 +13,19 @@ namespace Krabs
     {
         public MySqlConnection GetConnection()
         {
-            string serverName = "localhost";
+            string serverName = "root@localhost";
             string userName = "root"; // Имя пользователя 
             string dbName = "krabs"; //Имя базы данных 
-            string port = "3306"; // Порт для подключения 
-            string password = "root"; // Пароль для подключения 
+            string port = "3310"; // Порт для подключения 
+            string password = ""; // Пароль для подключения 
 
-            string connStr = "server=" + serverName +
+            /*string connStr = "server=" + serverName +
             ";user=" + userName +
             ";database=" + dbName +
             ";port=" + port +
-            ";password=" + password + ";" + "SslMode=none;Charset=utf8;Allow User Variables=True";
-             
+            ";password=" + password + ";" + "SslMode=none;Charset=utf8;Allow User Variables=True";*/
+            string connStr = "server=localhost;user=root;database=krabs;port=3310;password=;";
+
             //MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;Initial Catalog ='krabs';username=root;password=root;Charset=utf8;Allow User Variables=True;SslMode=none");
             return new MySqlConnection(connStr);
         }

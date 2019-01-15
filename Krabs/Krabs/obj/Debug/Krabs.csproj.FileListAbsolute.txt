@@ -350,16 +350,12 @@ C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.SqlServer.T
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EnvDTE.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
-C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Google.Protobuf.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\stdole.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\Microsoft.MSXML.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.xml
-C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.EntityFramework.xml
-C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySQL.Data.EntityFrameworkCore.xml
-C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySQL.Data.EntityFrameworkCore.Design.xml
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -438,3 +434,10 @@ C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.csproj.CoreComp
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.csproj.CopyComplete
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.exe
 C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\obj\Debug\Krabs.pdb
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EntityFramework.dll
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.dll
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EntityFramework.xml
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zver\Documents\GitHub\Krabs\Krabs\Krabs\bin\Debug\MySql.Data.Entity.EF6.xml

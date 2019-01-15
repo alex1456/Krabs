@@ -994,7 +994,7 @@
             // 
             this.metroDateTime3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime3.Location = new System.Drawing.Point(129, 102);
-            this.metroDateTime3.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime3.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime3.Name = "metroDateTime3";
             this.metroDateTime3.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime3.Style = MetroFramework.MetroColorStyle.Green;
@@ -1017,7 +1017,7 @@
             // 
             this.metroDateTime2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime2.Location = new System.Drawing.Point(129, 67);
-            this.metroDateTime2.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime2.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime2.Name = "metroDateTime2";
             this.metroDateTime2.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime2.Style = MetroFramework.MetroColorStyle.Green;
@@ -1098,7 +1098,7 @@
             // 
             this.metroDateTime1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime1.Location = new System.Drawing.Point(129, 32);
-            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime1.Name = "metroDateTime1";
             this.metroDateTime1.Size = new System.Drawing.Size(156, 29);
             this.metroDateTime1.Style = MetroFramework.MetroColorStyle.Green;
@@ -1542,7 +1542,7 @@
             this.tableLayoutPanel10.ColumnCount = 3;
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.14464F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.85536F));
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
             this.tableLayoutPanel10.Controls.Add(this.metroButton5, 2, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton6, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.metroButton7, 1, 0);
@@ -1557,9 +1557,9 @@
             // 
             this.metroButton5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton5.Location = new System.Drawing.Point(386, 3);
+            this.metroButton5.Location = new System.Drawing.Point(385, 3);
             this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(277, 23);
+            this.metroButton5.Size = new System.Drawing.Size(278, 23);
             this.metroButton5.TabIndex = 0;
             this.metroButton5.Text = "Оформить заказ";
             this.metroButton5.UseSelectable = true;
@@ -1583,7 +1583,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.metroButton7.Location = new System.Drawing.Point(164, 3);
             this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(216, 23);
+            this.metroButton7.Size = new System.Drawing.Size(215, 23);
             this.metroButton7.TabIndex = 2;
             this.metroButton7.Text = "Редактировать";
             this.metroButton7.UseSelectable = true;
@@ -2796,7 +2796,7 @@
             // 
             this.metroDateTime6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime6.Location = new System.Drawing.Point(129, 102);
-            this.metroDateTime6.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime6.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime6.Name = "metroDateTime6";
             this.metroDateTime6.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime6.TabIndex = 7;
@@ -2817,7 +2817,7 @@
             // 
             this.metroDateTime5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime5.Location = new System.Drawing.Point(129, 67);
-            this.metroDateTime5.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime5.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime5.Name = "metroDateTime5";
             this.metroDateTime5.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime5.TabIndex = 5;
@@ -2883,7 +2883,7 @@
             // 
             this.metroDateTime4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.metroDateTime4.Location = new System.Drawing.Point(129, 32);
-            this.metroDateTime4.MinimumSize = new System.Drawing.Size(0, 29);
+            this.metroDateTime4.MinimumSize = new System.Drawing.Size(4, 29);
             this.metroDateTime4.Name = "metroDateTime4";
             this.metroDateTime4.Size = new System.Drawing.Size(196, 29);
             this.metroDateTime4.TabIndex = 3;
@@ -3267,7 +3267,7 @@
             this.удалитьToolStripMenuItem1,
             this.печатьToolStripMenuItem});
             this.metroContextMenu1.Name = "metroContextMenu1";
-            this.metroContextMenu1.Size = new System.Drawing.Size(155, 70);
+            this.metroContextMenu1.Size = new System.Drawing.Size(181, 92);
             this.metroContextMenu1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroContextMenu1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroContextMenu1.Opening += new System.ComponentModel.CancelEventHandler(this.metroContextMenu1_Opening);
@@ -3276,7 +3276,7 @@
             // 
             this.редактироватьToolStripMenuItem1.Image = global::Krabs.Properties.Resources._27_Edit_Text_256x256_35395;
             this.редактироватьToolStripMenuItem1.Name = "редактироватьToolStripMenuItem1";
-            this.редактироватьToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.редактироватьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.редактироватьToolStripMenuItem1.Text = "Редактировать";
             this.редактироватьToolStripMenuItem1.Click += new System.EventHandler(this.редактироватьToolStripMenuItem1_Click);
             // 
@@ -3284,7 +3284,7 @@
             // 
             this.удалитьToolStripMenuItem1.Image = global::Krabs.Properties.Resources.recycling_recyclebin_empty_delete_trash_1771;
             this.удалитьToolStripMenuItem1.Name = "удалитьToolStripMenuItem1";
-            this.удалитьToolStripMenuItem1.Size = new System.Drawing.Size(154, 22);
+            this.удалитьToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.удалитьToolStripMenuItem1.Text = "Удалить";
             this.удалитьToolStripMenuItem1.Click += new System.EventHandler(this.удалитьToolStripMenuItem1_Click);
             // 
@@ -3292,8 +3292,9 @@
             // 
             this.печатьToolStripMenuItem.Image = global::Krabs.Properties.Resources.print_46933;
             this.печатьToolStripMenuItem.Name = "печатьToolStripMenuItem";
-            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.печатьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.печатьToolStripMenuItem.Text = "Печать";
+            this.печатьToolStripMenuItem.Click += new System.EventHandler(this.печатьToolStripMenuItem_Click);
             // 
             // Zacaz
             // 
