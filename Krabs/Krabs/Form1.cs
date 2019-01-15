@@ -18,6 +18,26 @@ namespace Krabs
             InitializeComponent();
             
         }
+        public string name1(string post)
+        {
+            string name = "";
+            Baza baza = new Baza();
+            MySqlConnection conn = baza.GetConnection();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM sotrudnici WHERE Post='" + post + "'", conn);
+            // объект для чтения ответа сервера
+            conn.Open();
+            MySqlDataReader reader = command.ExecuteReader();
+            // читаем результат
+            while (reader.Read())
+            {
+                // элементы массива [] - это значения столбцов из запроса SELECT
+                name = reader["Surname"].ToString();
+                
+            }
+            reader.Close();
+            conn.Close();
+            return name;
+        }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
@@ -29,6 +49,8 @@ namespace Krabs
             {
                 string login = "";
                 string password = "";
+                string name = "";
+                string post = "";
                 Baza baza = new Baza();
                 MySqlConnection conn = baza.GetConnection();
                 MySqlCommand command = new MySqlCommand("SELECT * FROM avtor WHERE Login='"+metroTextBox1.Text+"'", conn);
@@ -41,18 +63,28 @@ namespace Krabs
                     // элементы массива [] - это значения столбцов из запроса SELECT
                     login = reader["Login"].ToString();
                     password = reader["Password"].ToString();
+                    post = reader["Post"].ToString();
                 }
                 reader.Close();
                 conn.Close();
 
-                if(metroTextBox1.Text==login && metroTextBox2.Text == password)
+
+               name= name1(post);
+
+
+                if (metroTextBox1.Text==login && metroTextBox2.Text == password)
                 {
-                    Menu menu = new Menu();
-                    menu.Show();
-                    menu.klient();
-                    this.Hide();
-                    metroTextBox1.Text = "";
-                    metroTextBox2.Text = "";
+                    
+                    if (post== "Администратор")
+                    {
+                        Menu menu = new Menu(name);
+                        menu.Show();
+                        menu.klient();
+                        this.Hide();
+                        metroTextBox1.Text = "";
+                        metroTextBox2.Text = "";
+                    }
+                   
                 }
                 else
                 {

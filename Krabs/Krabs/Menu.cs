@@ -17,6 +17,11 @@ namespace Krabs
         {
             InitializeComponent();
         }
+        public Menu(string name)
+        {
+            InitializeComponent();
+            this.metroLabel2.Text = name;
+        }
 
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
         {
